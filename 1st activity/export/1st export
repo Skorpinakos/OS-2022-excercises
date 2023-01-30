@@ -1,0 +1,1710 @@
+[pi@pi ~]$  sudo pacman -S gcc kmod
+[sudo] password for pi: 
+warning: gcc-12.2.0-1 is up to date -- reinstalling
+warning: kmod-30-3 is up to date -- reinstalling
+resolving dependencies...
+looking for conflicting packages...
+
+Package (2)  Old Version  New Version  Net Change  Download Size
+
+core/gcc     12.2.0-1     12.2.0-1       0,00 MiB      44,50 MiB
+core/kmod    30-3         30-3           0,00 MiB               
+
+Total Download Size:    44,50 MiB
+Total Installed Size:  170,21 MiB
+Net Upgrade Size:        0,00 MiB
+
+:: Proceed with installation? [Y/n] y
+:: Retrieving packages...
+ gcc-12.2.0-1-x86_64.pkg.tar.zst failed to download
+error: failed retrieving file 'gcc-12.2.0-1-x86_64.pkg.tar.zst' from repo.greeklug.gr : The requested URL returned error: 404
+warning: failed to retrieve some files
+error: failed to commit transaction (failed to retrieve some files)
+Errors occurred, no packages were upgraded.
+[pi@pi ~]$ sudo pacman -S reflector
+warning: reflector-2021.11-5 is up to date -- reinstalling
+resolving dependencies...
+looking for conflicting packages...
+
+Package (1)          Old Version  New Version  Net Change
+
+community/reflector  2021.11-5    2021.11-5      0,00 MiB
+
+Total Installed Size:  0,10 MiB
+Net Upgrade Size:      0,00 MiB
+
+:: Proceed with installation? [Y/n] y
+(1/1) checking keys in keyring                               [--------------------------------] 100%
+(1/1) checking package integrity                             [--------------------------------] 100%
+(1/1) loading package files                                  [--------------------------------] 100%
+(1/1) checking for file conflicts                            [--------------------------------] 100%
+:: Processing package changes...
+(1/1) reinstalling reflector                                 [--------------------------------] 100%
+:: Running post-transaction hooks...
+(1/3) Reloading system manager configuration...
+(2/3) Arming ConditionNeedsUpdate...
+(3/3) Checking which packages need to be rebuilt
+[pi@pi ~]$  sudo pacman -S gcc kmod
+warning: gcc-12.2.0-1 is up to date -- reinstalling
+warning: kmod-30-3 is up to date -- reinstalling
+resolving dependencies...
+looking for conflicting packages...
+
+Package (2)  Old Version  New Version  Net Change  Download Size
+
+core/gcc     12.2.0-1     12.2.0-1       0,00 MiB      44,50 MiB
+core/kmod    30-3         30-3           0,00 MiB               
+
+Total Download Size:    44,50 MiB
+Total Installed Size:  170,21 MiB
+Net Upgrade Size:        0,00 MiB
+
+:: Proceed with installation? [Y/n] y
+:: Retrieving packages...
+ gcc-12.2.0-1-x86_64.pkg.tar.zst failed to download
+error: failed retrieving file 'gcc-12.2.0-1-x86_64.pkg.tar.zst' from repo.greeklug.gr : The requested URL returned error: 404
+warning: failed to retrieve some files
+error: failed to commit transaction (failed to retrieve some files)
+Errors occurred, no packages were upgraded.
+[pi@pi ~]$ sudo pacman -Syu
+:: Synchronizing package databases...
+ endeavouros                      31,1 KiB  53,3 KiB/s 00:01 [--------------------------------] 100%
+ core                            154,9 KiB   352 KiB/s 00:00 [--------------------------------] 100%
+ extra                          1745,6 KiB  2,16 MiB/s 00:01 [--------------------------------] 100%
+ community                         7,2 MiB  4,00 MiB/s 00:02 [--------------------------------] 100%
+ multilib                        164,9 KiB   604 KiB/s 00:00 [--------------------------------] 100%
+:: Starting full system upgrade...
+:: Replace yad-eos with endeavouros/yad? [Y/n] y
+resolving dependencies...
+looking for conflicting packages...
+warning: dependency cycle detected:
+warning: mesa will be installed before its libglvnd dependency
+
+warning: insufficient columns available for table display
+Packages (262) a52dec-0.7.4-12  aalib-1.4rc5-15  alsa-card-profiles-1:0.3.64-1
+               amd-ucode-20230117.7e4f0ed-1  arc-gtk-theme-eos-20221218-1
+               archlinux-keyring-20221220-1  audit-3.0.9-1  b43-fwcutter-019-4  bind-9.18.10-1
+               binutils-2.40-2  btrfs-progs-6.1.2-1  ca-certificates-mozilla-3.87-1
+               chromaprint-1.5.1-6  cifs-utils-7.0-2  code-1.74.3-1  curl-7.87.0-3  db-6.2.32-1
+               db5.3-5.3.28-2  default-cursors-2-1  device-mapper-2.03.18-4
+               dialog-1:1.3_20221229-1  dosfstools-4.2-3  duktape-2.7.0-5  electron19-19.1.9-3
+               elementary-icon-theme-7.1.0-1  ell-0.56-1  endeavouros-mirrorlist-4.11-1
+               endeavouros-skel-default-1.9-1  endeavouros-skel-xfce4-3.4-1
+               endeavouros-theming-22.12.1.1-1  endeavouros-xfce4-terminal-colors-5-1
+               eos-apps-info-1.6-1  eos-bash-shared-1.41-1  eos-hooks-1.10-1
+               eos-lightdm-slick-theme-3.2-1  eos-log-tool-1.14-5  eos-packagelist-2.1-1
+               eos-quickstart-1.3.1-1  eos-translations-23-6  ethtool-1:6.1-1  exo-4.18.0-1
+               file-5.44-1  findutils-4.9.0-2  firefox-109.0-1  firewalld-1.3.0-1  flex-2.6.4-4
+               fluidsynth-2.3.1-1  fsarchiver-0.8.6-2  fuse-common-3.13.0-1  fuse3-3.13.0-1
+               fzf-0.37.0-1  garcon-4.18.0-1  gcc-12.2.1-1  gcc-libs-12.2.1-1  gd-2.3.3-6
+               gdk-pixbuf2-2.42.10-2  geoip-database-20230120-1  git-2.39.1-1  glib2-2.74.5-1
+               glibc-2.36-7  gnu-netcat-0.7.1-9  gpgme-1.18.0-2  grub-2:2.06.r440.g4de39a2af-1
+               gst-libav-1.20.5-5  gst-plugin-pipewire-1:0.3.64-1  gst-plugins-bad-1.20.5-5
+               gst-plugins-bad-libs-1.20.5-5  gst-plugins-base-1.20.5-5
+               gst-plugins-base-libs-1.20.5-5  gst-plugins-good-1.20.5-5  gst-plugins-ugly-1.20.5-5
+               gstreamer-1.20.5-5  gtk-update-icon-cache-1:4.8.3-3  gtk3-1:3.24.36-1  guile-3.0.9-1
+               gupnp-1:1.6.3-1  gvfs-1.50.3-1  gvfs-afc-1.50.3-1  gvfs-gphoto2-1.50.3-1
+               gvfs-mtp-1.50.3-1  gvfs-nfs-1.50.3-1  gvfs-smb-1.50.3-1  harfbuzz-6.0.0-1
+               harfbuzz-icu-6.0.0-1  hidapi-0.13.1-1  hwdata-0.366-1  hwdetect-2023.01-1
+               hwinfo-22.2-1  iana-etc-20221215-1  imagemagick-7.1.0.58-1  imath-3.1.6-2
+               imlib2-1.10.0-2  inxi-3.3.24.1-4  iproute2-6.1.0-3  iptables-nft-1:1.8.8-3
+               iwd-2.2-1  lcms2-2.14-2  libarchive-3.6.2-2  libcamera-0.0.3-4  libelf-0.188-2
+               libgit2-1:1.5.1-2  libglvnd-1.6.0-1  libgusb-0.4.3-1  libheif-1.14.2-1
+               libical-3.0.16-4  libiec61883-1.2.0-7  libinput-1.22.1-1  libkeybinder3-0.3.2-4
+               libksba-1.6.3-1  liblc3-1.0.1-1  libmfx-23.1.0-1  libmm-glib-1.20.4-1
+               libmodplug-0.8.9.0-5  libmpc-1.3.1-1  libnice-0.1.21-1  libnm-1.40.12-1
+               libnma-1.10.6-1  libnma-common-1.10.6-1  libomxil-bellagio-0.9.3-4
+               libopenmpt-0.6.7-1  libopenraw-0.3.3-1  libpcap-1.10.3-1  libproxy-0.4.18-2
+               libpsl-0.21.2-1  libraqm-0.10.0-1  libsigc++-2.12.0-1  libsm-1.2.4-1
+               libsndfile-1.2.0-1  libsoxr-0.1.3-3  libsysprof-capture-3.46.0-3  libtiff-4.5.0-1
+               libtool-2.4.7+4+g1ec8fa28-1  libva-2.17.0-1  libwacom-2.6.0-1  libwbclient-4.17.4-4
+               libwebp-1.3.0-2  libwireplumber-0.4.13-1  libx11-1.8.3-6  libxfce4ui-4.18.1-1
+               libxfce4util-4.18.1-1  libxkbcommon-1.5.0-1  libxkbcommon-x11-1.5.0-1
+               libxpm-3.5.15-1  linux-6.1.8.arch1-1  linux-firmware-20230117.7e4f0ed-1
+               linux-firmware-whence-20230117.7e4f0ed-1  linux-headers-6.1.8.arch1-1
+               llvm-libs-15.0.7-1  logrotate-3.21.0-2  lua-5.4.4-3  lvm2-2.03.18-4  lzo-2.10-5
+               m4-1.4.19-2  make-4.4-1  man-db-2.11.2-1  man-pages-6.02-1  mesa-22.3.3-3
+               mobile-broadband-provider-info-20221107-2  modemmanager-1.20.4-1  mpfr-4.2.0-2
+               mpg123-1.31.2-1  nano-7.2-1  ncurses-6.4-1  ndctl-75-1  neon-0.32.5-1
+               net-tools-2.10-2  netctl-1.28-2  networkmanager-1.40.12-1  nftables-1:1.0.6-1
+               nilfs-utils-2.2.9-2  nss-3.87-1  ntp-4.2.8.p15-3  openjpeg2-2.5.0-2  openssl-3.0.7-4
+               pacman-contrib-1.8.2-1  pahole-1:1.24+r29+g02d67c5-1  parallel-20230122-1
+               pciutils-3.9.0-2  pcre2-10.41-1  pcsclite-1.9.9-2  perl-5.36.0-3
+               perl-encode-locale-1.05-10  perl-html-tagset-3.20-13  perl-http-date-6.05-6
+               perl-http-negotiate-6.01-11  perl-lwp-mediatypes-6.04-3  perl-www-robotrules-6.02-11
+               pipewire-1:0.3.64-1  pipewire-alsa-1:0.3.64-1  pipewire-audio-1:0.3.64-1
+               pipewire-jack-1:0.3.64-1  pipewire-pulse-1:0.3.64-1  poppler-23.01.0-3
+               poppler-glib-23.01.0-3  pptpclient-1.10.0-3  psmisc-23.6-1  python-3.10.9-1
+               python-setproctitle-1.3.2-1  python-termcolor-2.2.0-1  qrencode-4.1.1-2
+               qt5-base-5.15.8+kde+r177-1  qt5-translations-5.15.8-1  qt6-base-6.4.2-1
+               qt6-declarative-6.4.2-1  qt6-translations-6.4.2-1  rav1e-0.6.3-1  readline-8.2.001-2
+               reiserfsprogs-3.6.27-4  ripgrep-13.0.0-3  ristretto-0.12.4-1  rsync-3.2.7-3
+               sdl2-2.26.2-1  shadow-4.13-2  shared-mime-info-2.2+13+ga2ffb28-1  slang-2.3.3-2
+               smbclient-4.17.4-4  sof-firmware-2.2.4-1  spandsp-0.0.6-4  sqlite-3.40.1-1
+               sudo-1.9.12.p2-1  svt-av1-1.4.1-1  systemd-252.4-2  systemd-libs-252.4-2
+               systemd-sysvcompat-252.4-2  texinfo-7.0.2-1  thunar-4.18.3-1  thunar-volman-4.18.0-1
+               ttf-bitstream-vera-1.10-15  tumbler-4.18.0-1  unrar-1:6.2.5-1
+               virtualbox-guest-utils-7.0.6-1  webkit2gtk-2.38.3-1  welcome-3.46-1  whois-5.5.15-1
+               wildmidi-0.4.5-1  wireplumber-0.4.13-1  wpa_supplicant-2:2.10-8  xcb-util-0.4.1-1
+               xf86-video-vmware-13.4.0-1  xfce4-appfinder-4.18.0-1  xfce4-datetime-plugin-0.8.3-1
+               xfce4-notifyd-0.7.2-1  xfce4-panel-4.18.1-1  xfce4-power-manager-4.18.0-1
+               xfce4-screenshooter-1.10.3-1  xfce4-session-4.18.0-1  xfce4-settings-4.18.1-1
+               xfce4-taskmanager-1.5.5-1  xfce4-whiskermenu-plugin-2.7.2-1  xfconf-4.18.0-1
+               xfdesktop-4.18.1-1  xfsprogs-6.1.1-2  xfwm4-4.18.0-1  xorg-server-21.1.6-1
+               xorg-server-common-21.1.6-1  xterm-378-1  xz-5.4.1-1  yad-12.3-1.1
+               yad-eos-12.1-1.1 [removal]  yay-11.3.2-1  zvbi-0.2.39-1  zxing-cpp-2.0.0-1
+
+Total Download Size:    911,47 MiB
+Total Installed Size:  2883,73 MiB
+Net Upgrade Size:        73,72 MiB
+
+:: Proceed with installation? [Y/n] y
+:: Retrieving packages...
+ gcc-12.2.1-1-x86_64              44,6 MiB  1198 KiB/s 00:38 [--------------------------------] 100%
+ electron19-19.1.9-3-x86_64       54,8 MiB  1158 KiB/s 00:48 [--------------------------------] 100%
+ firefox-109.0-1-x86_64           64,7 MiB  1151 KiB/s 00:58 [--------------------------------] 100%
+ gcc-libs-12.2.1-1-x86_64         33,9 MiB  1163 KiB/s 00:30 [--------------------------------] 100%
+ llvm-libs-15.0.7-1-x86_64        29,3 MiB  1162 KiB/s 00:26 [--------------------------------] 100%
+ linux-headers-6.1.8.arch1-...    26,6 MiB  1179 KiB/s 00:23 [--------------------------------] 100%
+ perl-5.36.0-3-x86_64             15,6 MiB  1294 KiB/s 00:12 [--------------------------------] 100%
+ webkit2gtk-2.38.3-1-x86_64       24,0 MiB  1142 KiB/s 00:21 [--------------------------------] 100%
+ code-1.74.3-1-x86_64             14,1 MiB  1139 KiB/s 00:13 [--------------------------------] 100%
+ qt5-base-5.15.8+kde+r177-1...    13,0 MiB  1117 KiB/s 00:12 [--------------------------------] 100%
+ qt6-base-6.4.2-1-x86_64          12,8 MiB  1128 KiB/s 00:12 [--------------------------------] 100%
+ python-3.10.9-1-x86_64           12,0 MiB  1215 KiB/s 00:10 [--------------------------------] 100%
+ qt6-declarative-6.4.2-1-x86_64   10,8 MiB  1520 KiB/s 00:07 [--------------------------------] 100%
+ mesa-22.3.3-3-x86_64             10,5 MiB  1562 KiB/s 00:07 [--------------------------------] 100%
+ glibc-2.36-7-x86_64               9,8 MiB  1538 KiB/s 00:07 [--------------------------------] 100%
+ guile-3.0.9-1-x86_64              8,1 MiB  1600 KiB/s 00:05 [--------------------------------] 100%
+ systemd-252.4-2-x86_64            7,4 MiB  1596 KiB/s 00:05 [--------------------------------] 100%
+ gtk3-1:3.24.36-1-x86_64           7,7 MiB  1398 KiB/s 00:06 [--------------------------------] 100%
+ endeavouros-theming-22.12....    11,8 MiB   495 KiB/s 00:24 [--------------------------------] 100%
+ binutils-2.40-2-x86_64            7,1 MiB  2,01 MiB/s 00:04 [--------------------------------] 100%
+ grub-2:2.06.r440.g4de39a2a...     6,8 MiB  1531 KiB/s 00:05 [--------------------------------] 100%
+ smbclient-4.17.4-4-x86_64         6,7 MiB  1438 KiB/s 00:05 [--------------------------------] 100%
+ openssl-3.0.7-4-x86_64            5,1 MiB  2,50 MiB/s 00:02 [--------------------------------] 100%
+ man-pages-6.02-1-any              5,5 MiB  1456 KiB/s 00:04 [--------------------------------] 100%
+ git-2.39.1-1-x86_64               6,6 MiB  1399 KiB/s 00:05 [--------------------------------] 100%
+ imath-3.1.6-2-x86_64              3,9 MiB  3,56 MiB/s 00:01 [--------------------------------] 100%
+ glib2-2.74.5-1-x86_64             3,7 MiB  2,22 MiB/s 00:02 [--------------------------------] 100%
+ networkmanager-1.40.12-1-x...     3,5 MiB  1803 KiB/s 00:02 [--------------------------------] 100%
+ imagemagick-7.1.0.58-1-x86_64     2,9 MiB  2,69 MiB/s 00:01 [--------------------------------] 100%
+ geoip-database-20230120-1-any     3,1 MiB  2,02 MiB/s 00:02 [--------------------------------] 100%
+ elementary-icon-theme-7.1....     2,6 MiB  1671 KiB/s 00:02 [--------------------------------] 100%
+ gst-plugins-bad-libs-1.20....     2,1 MiB  1767 KiB/s 00:01 [--------------------------------] 100%
+ gst-plugins-base-libs-1.20...     2,1 MiB  1869 KiB/s 00:01 [--------------------------------] 100%
+ libx11-1.8.3-6-x86_64             2,0 MiB  2,34 MiB/s 00:01 [--------------------------------] 100%
+ svt-av1-1.4.1-1-x86_64         2047,2 KiB  2,32 MiB/s 00:01 [--------------------------------] 100%
+ gst-plugins-good-1.20.5-5-...  2010,2 KiB  1699 KiB/s 00:01 [--------------------------------] 100%
+ yay-11.3.2-1-x86_64               2,5 MiB   519 KiB/s 00:05 [--------------------------------] 100%
+ bind-9.18.10-1-x86_64          1972,9 KiB  1299 KiB/s 00:02 [--------------------------------] 100%
+ qt5-translations-5.15.8-1-any  1929,2 KiB  1546 KiB/s 00:01 [--------------------------------] 100%
+ lvm2-2.03.18-4-x86_64          1906,1 KiB  1863 KiB/s 00:01 [--------------------------------] 100%
+ ntp-4.2.8.p15-3-x86_64         1827,9 KiB  1733 KiB/s 00:01 [--------------------------------] 100%
+ gstreamer-1.20.5-5-x86_64      1813,6 KiB  2,05 MiB/s 00:01 [--------------------------------] 100%
+ sudo-1.9.12.p2-1-x86_64        1764,8 KiB  1912 KiB/s 00:01 [--------------------------------] 100%
+ qt6-translations-6.4.2-1-any   1734,4 KiB  1736 KiB/s 00:01 [--------------------------------] 100%
+ wpa_supplicant-2:2.10-8-x86_64 1659,8 KiB  1962 KiB/s 00:01 [--------------------------------] 100%
+ texinfo-7.0.2-1-x86_64         1607,5 KiB  1705 KiB/s 00:01 [--------------------------------] 100%
+ sqlite-3.40.1-1-x86_64         1606,1 KiB  1899 KiB/s 00:01 [--------------------------------] 100%
+ nss-3.87-1-x86_64              1581,8 KiB  1537 KiB/s 00:01 [--------------------------------] 100%
+ hwdata-0.366-1-any             1567,8 KiB  1192 KiB/s 00:01 [--------------------------------] 100%
+ rav1e-0.6.3-1-x86_64           1564,2 KiB  1204 KiB/s 00:01 [--------------------------------] 100%
+ poppler-23.01.0-3-x86_64       1564,1 KiB  1858 KiB/s 00:01 [--------------------------------] 100%
+ thunar-4.18.3-1-x86_64         1492,4 KiB  1612 KiB/s 00:01 [--------------------------------] 100%
+ xorg-server-21.1.6-1-x86_64    1476,8 KiB  1739 KiB/s 00:01 [--------------------------------] 100%
+ pcre2-10.41-1-x86_64           1466,0 KiB  1947 KiB/s 00:01 [--------------------------------] 100%
+ xfdesktop-4.18.1-1-x86_64      1400,1 KiB  1430 KiB/s 00:01 [--------------------------------] 100%
+ db-6.2.32-1-x86_64             1360,3 KiB  1273 KiB/s 00:01 [--------------------------------] 100%
+ modemmanager-1.20.4-1-x86_64   1323,2 KiB  1721 KiB/s 00:01 [--------------------------------] 100%
+ ripgrep-13.0.0-3-x86_64        1312,0 KiB  1726 KiB/s 00:01 [--------------------------------] 100%
+ libtiff-4.5.0-1-x86_64         1262,4 KiB  1464 KiB/s 00:01 [--------------------------------] 100%
+ db5.3-5.3.28-2-x86_64          1229,3 KiB  1372 KiB/s 00:01 [--------------------------------] 100%
+ fzf-0.37.0-1-x86_64            1204,6 KiB  1283 KiB/s 00:01 [--------------------------------] 100%
+ libopenraw-0.3.3-1-x86_64      1199,9 KiB  1532 KiB/s 00:01 [--------------------------------] 100%
+ linux-6.1.8.arch1-1-x86_64      164,1 MiB  1072 KiB/s 02:37 [--------------------------------] 100%
+ shadow-4.13-2-x86_64           1196,0 KiB  1320 KiB/s 00:01 [--------------------------------] 100%
+ gst-plugins-bad-1.20.5-5-x...  1184,9 KiB  1519 KiB/s 00:01 [--------------------------------] 100%
+ ncurses-6.4-1-x86_64           1182,1 KiB  1204 KiB/s 00:01 [--------------------------------] 100%
+ curl-7.87.0-3-x86_64           1178,0 KiB   945 KiB/s 00:01 [--------------------------------] 100%
+ archlinux-keyring-20221220...  1153,7 KiB   866 KiB/s 00:01 [--------------------------------] 100%
+ libnm-1.40.12-1-x86_64         1127,1 KiB  1085 KiB/s 00:01 [--------------------------------] 100%
+ libgusb-0.4.3-1-x86_64         1122,8 KiB  1738 KiB/s 00:01 [--------------------------------] 100%
+ iproute2-6.1.0-3-x86_64        1113,1 KiB  1837 KiB/s 00:01 [--------------------------------] 100%
+ man-db-2.11.2-1-x86_64         1110,5 KiB  1328 KiB/s 00:01 [--------------------------------] 100%
+ harfbuzz-6.0.0-1-x86_64        1048,9 KiB  1357 KiB/s 00:01 [--------------------------------] 100%
+ linux-firmware-20230117.7e...   170,2 MiB  1083 KiB/s 02:41 [--------------------------------] 100%
+ xfsprogs-6.1.1-2-x86_64        1029,9 KiB  1024 KiB/s 00:01 [--------------------------------] 100%
+ firewalld-1.3.0-1-any          1025,5 KiB  2,42 MiB/s 00:00 [--------------------------------] 100%
+ gvfs-1.50.3-1-x86_64           1021,6 KiB  2031 KiB/s 00:01 [--------------------------------] 100%
+ pipewire-1:0.3.64-1-x86_64     1007,7 KiB  1793 KiB/s 00:01 [--------------------------------] 100%
+ hwinfo-22.2-1-x86_64           1018,7 KiB  1530 KiB/s 00:01 [--------------------------------] 100%
+ sdl2-2.26.2-1-x86_64            987,3 KiB  1991 KiB/s 00:00 [--------------------------------] 100%
+ btrfs-progs-6.1.2-1-x86_64      953,9 KiB  2,72 MiB/s 00:00 [--------------------------------] 100%
+ openjpeg2-2.5.0-2-x86_64        928,5 KiB  1975 KiB/s 00:00 [--------------------------------] 100%
+ xfce4-settings-4.18.1-1-x86_64  889,1 KiB  1880 KiB/s 00:00 [--------------------------------] 100%
+ pipewire-audio-1:0.3.64-1-...   860,2 KiB  1468 KiB/s 00:01 [--------------------------------] 100%
+ libgit2-1:1.5.1-2-x86_64        849,2 KiB  1994 KiB/s 00:00 [--------------------------------] 100%
+ libcamera-0.0.3-4-x86_64        837,6 KiB  2,89 MiB/s 00:00 [--------------------------------] 100%
+ slang-2.3.3-2-x86_64            826,1 KiB  2,00 MiB/s 00:00 [--------------------------------] 100%
+ xfce4-panel-4.18.1-1-x86_64     786,4 KiB  1951 KiB/s 00:00 [--------------------------------] 100%
+ libmm-glib-1.20.4-1-x86_64      786,2 KiB  1618 KiB/s 00:00 [--------------------------------] 100%
+ virtualbox-guest-utils-7.0...   736,6 KiB  1674 KiB/s 00:00 [--------------------------------] 100%
+ libopenmpt-0.6.7-1-x86_64       687,7 KiB  2,80 MiB/s 00:00 [--------------------------------] 100%
+ sof-firmware-2.2.4-1-x86_64     646,4 KiB  2,52 MiB/s 00:00 [--------------------------------] 100%
+ systemd-libs-252.4-2-x86_64     641,9 KiB  1987 KiB/s 00:00 [--------------------------------] 100%
+ shared-mime-info-2.2+13+ga...   609,2 KiB  1869 KiB/s 00:00 [--------------------------------] 100%
+ libical-3.0.16-4-x86_64         614,2 KiB  1214 KiB/s 00:01 [--------------------------------] 100%
+ nano-7.2-1-x86_64               598,6 KiB  2,62 MiB/s 00:00 [--------------------------------] 100%
+ iwd-2.2-1-x86_64                562,9 KiB  1432 KiB/s 00:00 [--------------------------------] 100%
+ zxing-cpp-2.0.0-1-x86_64        570,9 KiB   974 KiB/s 00:01 [--------------------------------] 100%
+ imlib2-1.10.0-2-x86_64          561,2 KiB   863 KiB/s 00:01 [--------------------------------] 100%
+ libelf-0.188-2-x86_64           550,0 KiB   887 KiB/s 00:01 [--------------------------------] 100%
+ xfce4-power-manager-4.18.0...   545,1 KiB  2,25 MiB/s 00:00 [--------------------------------] 100%
+ gdk-pixbuf2-2.42.10-2-x86_64    516,7 KiB  1943 KiB/s 00:00 [--------------------------------] 100%
+ libarchive-3.6.2-2-x86_64       522,3 KiB  1617 KiB/s 00:00 [--------------------------------] 100%
+ make-4.4-1-x86_64               519,2 KiB  1210 KiB/s 00:00 [--------------------------------] 100%
+ xz-5.4.1-1-x86_64               511,5 KiB  1461 KiB/s 00:00 [--------------------------------] 100%
+ xfwm4-4.18.0-1-x86_64           493,6 KiB  3,92 MiB/s 00:00 [--------------------------------] 100%
+ xterm-378-1-x86_64              446,0 KiB  2,46 MiB/s 00:00 [--------------------------------] 100%
+ gpgme-1.18.0-2-x86_64           447,1 KiB  1840 KiB/s 00:00 [--------------------------------] 100%
+ mpg123-1.31.2-1-x86_64          438,1 KiB  1495 KiB/s 00:00 [--------------------------------] 100%
+ iptables-nft-1:1.8.8-3-x86_64   431,5 KiB  1453 KiB/s 00:00 [--------------------------------] 100%
+ mpfr-4.2.0-2-x86_64             427,4 KiB  2035 KiB/s 00:00 [--------------------------------] 100%
+ findutils-4.9.0-2-x86_64        418,1 KiB  3,05 MiB/s 00:00 [--------------------------------] 100%
+ spandsp-0.0.6-4-x86_64          424,1 KiB  2,01 MiB/s 00:00 [--------------------------------] 100%
+ libtool-2.4.7+4+g1ec8fa28-...   412,4 KiB  2,09 MiB/s 00:00 [--------------------------------] 100%
+ iana-etc-20221215-1-any         395,6 KiB  1449 KiB/s 00:00 [--------------------------------] 100%
+ audit-3.0.9-1-x86_64            387,3 KiB  1278 KiB/s 00:00 [--------------------------------] 100%
+ nftables-1:1.0.6-1-x86_64       386,5 KiB  1733 KiB/s 00:00 [--------------------------------] 100%
+ libxfce4ui-4.18.1-1-x86_64      377,4 KiB  2,30 MiB/s 00:00 [--------------------------------] 100%
+ file-5.44-1-x86_64              385,2 KiB  1861 KiB/s 00:00 [--------------------------------] 100%
+ zvbi-0.2.39-1-x86_64            374,3 KiB  1701 KiB/s 00:00 [--------------------------------] 100%
+ libglvnd-1.6.0-1-x86_64         355,2 KiB  2,04 MiB/s 00:00 [--------------------------------] 100%
+ ndctl-75-1-x86_64               360,9 KiB  1718 KiB/s 00:00 [--------------------------------] 100%
+ ca-certificates-mozilla-3....   354,3 KiB  1540 KiB/s 00:00 [--------------------------------] 100%
+ xfce4-session-4.18.0-1-x86_64   336,1 KiB  2,19 MiB/s 00:00 [--------------------------------] 100%
+ libwebp-1.3.0-2-x86_64          345,0 KiB  1845 KiB/s 00:00 [--------------------------------] 100%
+ rsync-3.2.7-3-x86_64            336,0 KiB  1527 KiB/s 00:00 [--------------------------------] 100%
+ arc-gtk-theme-eos-20221218...   371,5 KiB   441 KiB/s 00:01 [--------------------------------] 100%
+ gst-plugins-base-1.20.5-5-...   327,4 KiB  1893 KiB/s 00:00 [--------------------------------] 100%
+ readline-8.2.001-2-x86_64       323,1 KiB  1836 KiB/s 00:00 [--------------------------------] 100%
+ parallel-20230122-1-any         323,7 KiB  1295 KiB/s 00:00 [--------------------------------] 100%
+ libsndfile-1.2.0-1-x86_64       316,2 KiB  1828 KiB/s 00:00 [--------------------------------] 100%
+ exo-4.18.0-1-x86_64             319,9 KiB  1502 KiB/s 00:00 [--------------------------------] 100%
+ libnice-0.1.21-1-x86_64         314,5 KiB  1883 KiB/s 00:00 [--------------------------------] 100%
+ pahole-1:1.24+r29+g02d67c5...   313,0 KiB  1886 KiB/s 00:00 [--------------------------------] 100%
+ flex-2.6.4-4-x86_64             307,7 KiB  1960 KiB/s 00:00 [--------------------------------] 100%
+ lua-5.4.4-3-x86_64              310,0 KiB  1435 KiB/s 00:00 [--------------------------------] 100%
+ eos-apps-info-1.6-1-any         364,6 KiB   254 KiB/s 00:01 [--------------------------------] 100%
+ inxi-3.3.24.1-4-any             302,9 KiB  2,03 MiB/s 00:00 [--------------------------------] 100%
+ device-mapper-2.03.18-4-x86_64  294,8 KiB  1808 KiB/s 00:00 [--------------------------------] 100%
+ poppler-glib-23.01.0-3-x86_64   289,3 KiB  1447 KiB/s 00:00 [--------------------------------] 100%
+ libpcap-1.10.3-1-x86_64         285,1 KiB  1314 KiB/s 00:00 [--------------------------------] 100%
+ libinput-1.22.1-1-x86_64        279,8 KiB  1581 KiB/s 00:00 [--------------------------------] 100%
+ fluidsynth-2.3.1-1-x86_64       267,6 KiB  1872 KiB/s 00:00 [--------------------------------] 100%
+ libheif-1.14.2-1-x86_64         264,7 KiB  1521 KiB/s 00:00 [--------------------------------] 100%
+ m4-1.4.19-2-x86_64              246,0 KiB  1398 KiB/s 00:00 [--------------------------------] 100%
+ psmisc-23.6-1-x86_64            250,7 KiB  1161 KiB/s 00:00 [--------------------------------] 100%
+ ristretto-0.12.4-1-x86_64       245,9 KiB  1999 KiB/s 00:00 [--------------------------------] 100%
+ ell-0.56-1-x86_64               236,5 KiB  2,10 MiB/s 00:00 [--------------------------------] 100%
+ gst-plugins-ugly-1.20.5-5-...   221,4 KiB   963 KiB/s 00:00 [--------------------------------] 100%
+ ttf-bitstream-vera-1.10-15-any  232,5 KiB   830 KiB/s 00:00 [--------------------------------] 100%
+ reiserfsprogs-3.6.27-4-x86_64   214,8 KiB  1568 KiB/s 00:00 [--------------------------------] 100%
+ libwireplumber-0.4.13-1-x86_64  220,7 KiB   894 KiB/s 00:00 [--------------------------------] 100%
+ xfce4-whiskermenu-plugin-2...   211,7 KiB  1080 KiB/s 00:00 [--------------------------------] 100%
+ neon-0.32.5-1-x86_64            209,4 KiB   939 KiB/s 00:00 [--------------------------------] 100%
+ wireplumber-0.4.13-1-x86_64     207,6 KiB   944 KiB/s 00:00 [--------------------------------] 100%
+ lcms2-2.14-2-x86_64             214,4 KiB   750 KiB/s 00:00 [--------------------------------] 100%
+ yad-12.3-1.1-x86_64             218,0 KiB   396 KiB/s 00:01 [--------------------------------] 100%
+ dialog-1:1.3_20221229-1-x86_64  200,1 KiB   625 KiB/s 00:00 [--------------------------------] 100%
+ libxkbcommon-1.5.0-1-x86_64     203,2 KiB   571 KiB/s 00:00 [--------------------------------] 100%
+ ethtool-1:6.1-1-x86_64          193,8 KiB   466 KiB/s 00:00 [--------------------------------] 100%
+ libnma-common-1.10.6-1-x86_64   192,1 KiB   473 KiB/s 00:00 [--------------------------------] 100%
+ xfconf-4.18.0-1-x86_64          184,2 KiB   436 KiB/s 00:00 [--------------------------------] 100%
+ libva-2.17.0-1-x86_64           183,2 KiB  1579 KiB/s 00:00 [--------------------------------] 100%
+ xfce4-screenshooter-1.10.3...   182,1 KiB  1247 KiB/s 00:00 [--------------------------------] 100%
+ libmodplug-0.8.9.0-5-x86_64     166,9 KiB  1477 KiB/s 00:00 [--------------------------------] 100%
+ duktape-2.7.0-5-x86_64          176,9 KiB   983 KiB/s 00:00 [--------------------------------] 100%
+ garcon-4.18.0-1-x86_64          166,8 KiB   906 KiB/s 00:00 [--------------------------------] 100%
+ tumbler-4.18.0-1-x86_64         165,4 KiB  2,31 MiB/s 00:00 [--------------------------------] 100%
+ pipewire-pulse-1:0.3.64-1-...   164,2 KiB  1124 KiB/s 00:00 [--------------------------------] 100%
+ gd-2.3.3-6-x86_64               155,6 KiB  1235 KiB/s 00:00 [--------------------------------] 100%
+ xfce4-appfinder-4.18.0-1-x...   162,7 KiB   941 KiB/s 00:00 [--------------------------------] 100%
+ pipewire-jack-1:0.3.64-1-x...   149,3 KiB  1214 KiB/s 00:00 [--------------------------------] 100%
+ xfce4-notifyd-0.7.2-1-x86_64    142,8 KiB   934 KiB/s 00:00 [--------------------------------] 100%
+ net-tools-2.10-2-x86_64         140,0 KiB  2,91 MiB/s 00:00 [--------------------------------] 100%
+ unrar-1:6.2.5-1-x86_64          140,4 KiB  1312 KiB/s 00:00 [--------------------------------] 100%
+ libxfce4util-4.18.1-1-x86_64    135,1 KiB  1407 KiB/s 00:00 [--------------------------------] 100%
+ dosfstools-4.2-3-x86_64         134,8 KiB  2,31 MiB/s 00:00 [--------------------------------] 100%
+ aalib-1.4rc5-15-x86_64          134,9 KiB  1686 KiB/s 00:00 [--------------------------------] 100%
+ thunar-volman-4.18.0-1-x86_64   131,5 KiB  1370 KiB/s 00:00 [--------------------------------] 100%
+ libksba-1.6.3-1-x86_64          139,7 KiB   559 KiB/s 00:00 [--------------------------------] 100%
+ fuse3-3.13.0-1-x86_64           123,6 KiB  1545 KiB/s 00:00 [--------------------------------] 100%
+ gupnp-1:1.6.3-1-x86_64          123,9 KiB   843 KiB/s 00:00 [--------------------------------] 100%
+ nilfs-utils-2.2.9-2-x86_64      116,0 KiB  1657 KiB/s 00:00 [--------------------------------] 100%
+ libnma-1.10.6-1-x86_64          114,6 KiB  1381 KiB/s 00:00 [--------------------------------] 100%
+ libwacom-2.6.0-1-x86_64         111,1 KiB  1736 KiB/s 00:00 [--------------------------------] 100%
+ xfce4-taskmanager-1.5.5-1-...   111,2 KiB  1340 KiB/s 00:00 [--------------------------------] 100%
+ pciutils-3.9.0-2-x86_64         110,3 KiB  1512 KiB/s 00:00 [--------------------------------] 100%
+ fsarchiver-0.8.6-2-x86_64       102,9 KiB   774 KiB/s 00:00 [--------------------------------] 100%
+ pcsclite-1.9.9-2-x86_64          96,3 KiB   724 KiB/s 00:00 [--------------------------------] 100%
+ libomxil-bellagio-0.9.3-4-...   122,3 KiB   316 KiB/s 00:00 [--------------------------------] 100%
+ gst-libav-1.20.5-5-x86_64        93,0 KiB  1223 KiB/s 00:00 [--------------------------------] 100%
+ wildmidi-0.4.5-1-x86_64          91,8 KiB   956 KiB/s 00:00 [--------------------------------] 100%
+ lzo-2.10-5-x86_64                87,8 KiB  2,32 MiB/s 00:00 [--------------------------------] 100%
+ cifs-utils-7.0-2-x86_64          90,4 KiB  1089 KiB/s 00:00 [--------------------------------] 100%
+ libproxy-0.4.18-2-x86_64         86,6 KiB  1186 KiB/s 00:00 [--------------------------------] 100%
+ libmpc-1.3.1-1-x86_64            84,2 KiB   968 KiB/s 00:00 [--------------------------------] 100%
+ libpsl-0.21.2-1-x86_64           81,8 KiB  1168 KiB/s 00:00 [--------------------------------] 100%
+ liblc3-1.0.1-1-x86_64            80,1 KiB  1040 KiB/s 00:00 [--------------------------------] 100%
+ libsoxr-0.1.3-3-x86_64           78,3 KiB  1118 KiB/s 00:00 [--------------------------------] 100%
+ xf86-video-vmware-13.4.0-1...    75,9 KiB  1084 KiB/s 00:00 [--------------------------------] 100%
+ libxpm-3.5.15-1-x86_64           71,6 KiB  1256 KiB/s 00:00 [--------------------------------] 100%
+ whois-5.5.15-1-x86_64            73,6 KiB  1008 KiB/s 00:00 [--------------------------------] 100%
+ libsigc++-2.12.0-1-x86_64        68,2 KiB   852 KiB/s 00:00 [--------------------------------] 100%
+ mobile-broadband-provider-...    63,2 KiB   727 KiB/s 00:00 [--------------------------------] 100%
+ libmfx-23.1.0-1-x86_64           56,9 KiB  1323 KiB/s 00:00 [--------------------------------] 100%
+ eos-translations-23-6-any        75,5 KiB   320 KiB/s 00:00 [--------------------------------] 100%
+ gvfs-mtp-1.50.3-1-x86_64         48,8 KiB   659 KiB/s 00:00 [--------------------------------] 100%
+ eos-quickstart-1.3.1-1-x86_64    51,9 KiB   319 KiB/s 00:00 [--------------------------------] 100%
+ logrotate-3.21.0-2-x86_64        47,4 KiB   551 KiB/s 00:00 [--------------------------------] 100%
+ gvfs-gphoto2-1.50.3-1-x86_64     48,2 KiB   392 KiB/s 00:00 [--------------------------------] 100%
+ gst-plugin-pipewire-1:0.3....    46,7 KiB   697 KiB/s 00:00 [--------------------------------] 100%
+ libsm-1.2.4-1-x86_64             45,9 KiB   866 KiB/s 00:00 [--------------------------------] 100%
+ a52dec-0.7.4-12-x86_64           45,8 KiB   551 KiB/s 00:00 [--------------------------------] 100%
+ chromaprint-1.5.1-6-x86_64       45,5 KiB   548 KiB/s 00:00 [--------------------------------] 100%
+ eos-bash-shared-1.41-1-any       46,1 KiB   271 KiB/s 00:00 [--------------------------------] 100%
+ libsysprof-capture-3.46.0-...    45,3 KiB   521 KiB/s 00:00 [--------------------------------] 100%
+ pptpclient-1.10.0-3-x86_64       44,3 KiB   778 KiB/s 00:00 [--------------------------------] 100%
+ gvfs-afc-1.50.3-1-x86_64         43,6 KiB   485 KiB/s 00:00 [--------------------------------] 100%
+ pacman-contrib-1.8.2-1-x86_64    42,5 KiB   560 KiB/s 00:00 [--------------------------------] 100%
+ netctl-1.28-2-any                41,4 KiB   592 KiB/s 00:00 [--------------------------------] 100%
+ xfce4-datetime-plugin-0.8....    38,3 KiB   456 KiB/s 00:00 [--------------------------------] 100%
+ qrencode-4.1.1-2-x86_64          39,9 KiB   412 KiB/s 00:00 [--------------------------------] 100%
+ amd-ucode-20230117.7e4f0ed...    35,3 KiB   589 KiB/s 00:00 [--------------------------------] 100%
+ libwbclient-4.17.4-4-x86_64      35,1 KiB   378 KiB/s 00:00 [--------------------------------] 100%
+ endeavouros-skel-xfce4-3.4...    35,3 KiB   294 KiB/s 00:00 [--------------------------------] 100%
+ libiec61883-1.2.0-7-x86_64       32,7 KiB   467 KiB/s 00:00 [--------------------------------] 100%
+ libraqm-0.10.0-1-x86_64          32,3 KiB   751 KiB/s 00:00 [--------------------------------] 100%
+ linux-firmware-whence-2023...    30,0 KiB   882 KiB/s 00:00 [--------------------------------] 100%
+ welcome-3.46-1-any               34,0 KiB   221 KiB/s 00:00 [--------------------------------] 100%
+ gnu-netcat-0.7.1-9-x86_64        29,8 KiB   372 KiB/s 00:00 [--------------------------------] 100%
+ gvfs-smb-1.50.3-1-x86_64         29,6 KiB   520 KiB/s 00:00 [--------------------------------] 100%
+ hidapi-0.13.1-1-x86_64           29,6 KiB   529 KiB/s 00:00 [--------------------------------] 100%
+ xorg-server-common-21.1.6-...    27,8 KiB   347 KiB/s 00:00 [--------------------------------] 100%
+ libxkbcommon-x11-1.5.0-1-x...    22,5 KiB   449 KiB/s 00:00 [--------------------------------] 100%
+ alsa-card-profiles-1:0.3.6...    27,6 KiB   521 KiB/s 00:00 [--------------------------------] 100%
+ gvfs-nfs-1.50.3-1-x86_64         21,2 KiB   423 KiB/s 00:00 [--------------------------------] 100%
+ libkeybinder3-0.3.2-4-x86_64     20,7 KiB   207 KiB/s 00:00 [--------------------------------] 100%
+ b43-fwcutter-019-4-x86_64        19,2 KiB   384 KiB/s 00:00 [--------------------------------] 100%
+ perl-lwp-mediatypes-6.04-3-any   19,4 KiB   308 KiB/s 00:00 [--------------------------------] 100%
+ eos-log-tool-1.14-5-any          20,2 KiB   179 KiB/s 00:00 [--------------------------------] 100%
+ endeavouros-skel-default-1...    17,4 KiB   124 KiB/s 00:00 [--------------------------------] 100%
+ gtk-update-icon-cache-1:4....    16,3 KiB   286 KiB/s 00:00 [--------------------------------] 100%
+ eos-hooks-1.10-1-any             17,1 KiB   150 KiB/s 00:00 [--------------------------------] 100%
+ python-setproctitle-1.3.2-...    14,4 KiB   307 KiB/s 00:00 [--------------------------------] 100%
+ eos-packagelist-2.1-1-any        15,2 KiB   164 KiB/s 00:00 [--------------------------------] 100%
+ eos-lightdm-slick-theme-3....    13,8 KiB   134 KiB/s 00:00 [--------------------------------] 100%
+ endeavouros-xfce4-terminal...    13,5 KiB   139 KiB/s 00:00 [--------------------------------] 100%
+ xcb-util-0.4.1-1-x86_64          12,4 KiB   234 KiB/s 00:00 [--------------------------------] 100%
+ endeavouros-mirrorlist-4.1...    13,5 KiB   145 KiB/s 00:00 [--------------------------------] 100%
+ perl-www-robotrules-6.02-1...    12,3 KiB   262 KiB/s 00:00 [--------------------------------] 100%
+ perl-http-negotiate-6.01-1...    12,3 KiB   205 KiB/s 00:00 [--------------------------------] 100%
+ perl-html-tagset-3.20-13-any     11,0 KiB   167 KiB/s 00:00 [--------------------------------] 100%
+ perl-encode-locale-1.05-10-any   10,8 KiB   129 KiB/s 00:00 [--------------------------------] 100%
+ perl-http-date-6.05-6-any         9,7 KiB  83,5 KiB/s 00:00 [--------------------------------] 100%
+ python-termcolor-2.2.0-1-any     10,5 KiB  64,2 KiB/s 00:00 [--------------------------------] 100%
+ harfbuzz-icu-6.0.0-1-x86_64       7,8 KiB   130 KiB/s 00:00 [--------------------------------] 100%
+ systemd-sysvcompat-252.4-2...     6,1 KiB   107 KiB/s 00:00 [--------------------------------] 100%
+ hwdetect-2023.01-1-any            5,6 KiB  76,0 KiB/s 00:00 [--------------------------------] 100%
+ pipewire-alsa-1:0.3.64-1-x...     4,8 KiB  96,7 KiB/s 00:00 [--------------------------------] 100%
+ fuse-common-3.13.0-1-x86_64       2,6 KiB  65,6 KiB/s 00:00 [--------------------------------] 100%
+ default-cursors-2-1-any           2,2 KiB  66,1 KiB/s 00:00 [--------------------------------] 100%
+ Total (261/261)                 911,5 MiB  5,29 MiB/s 02:52 [--------------------------------] 100%
+(261/261) checking keys in keyring                           [--------------------------------] 100%
+(261/261) checking package integrity                         [--------------------------------] 100%
+error: openssl: signature from "Pierre Schmitz <pierre@archlinux.org>" is marginal trust
+:: File /var/cache/pacman/pkg/openssl-3.0.7-4-x86_64.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
+Do you want to delete it? [Y/n] y
+error: failed to commit transaction (invalid or corrupted package)
+Errors occurred, no packages were upgraded.
+[pi@pi ~]$ pacman-key --init
+==> ERROR: pacman-key needs to be run as root for this operation.
+[pi@pi ~]$ sudo pacman-key --init
+[sudo] password for pi: 
+[pi@pi ~]$ sudo pacman-key --populate
+==> Appending keys from archlinux.gpg...
+==> Appending keys from endeavouros.gpg...
+==> Updating trust database...
+gpg: next trustdb check due at 2023-04-21
+[pi@pi ~]$ sudo pacman -Syu
+:: Synchronizing package databases...
+ endeavouros is up to date
+ core is up to date
+ extra is up to date
+ community is up to date
+ multilib is up to date
+:: Starting full system upgrade...
+:: Replace yad-eos with endeavouros/yad? [Y/n] y
+resolving dependencies...
+looking for conflicting packages...
+warning: dependency cycle detected:
+warning: mesa will be installed before its libglvnd dependency
+
+warning: insufficient columns available for table display
+Packages (262) a52dec-0.7.4-12  aalib-1.4rc5-15  alsa-card-profiles-1:0.3.64-1
+               amd-ucode-20230117.7e4f0ed-1  arc-gtk-theme-eos-20221218-1
+               archlinux-keyring-20221220-1  audit-3.0.9-1  b43-fwcutter-019-4  bind-9.18.10-1
+               binutils-2.40-2  btrfs-progs-6.1.2-1  ca-certificates-mozilla-3.87-1
+               chromaprint-1.5.1-6  cifs-utils-7.0-2  code-1.74.3-1  curl-7.87.0-3  db-6.2.32-1
+               db5.3-5.3.28-2  default-cursors-2-1  device-mapper-2.03.18-4
+               dialog-1:1.3_20221229-1  dosfstools-4.2-3  duktape-2.7.0-5  electron19-19.1.9-3
+               elementary-icon-theme-7.1.0-1  ell-0.56-1  endeavouros-mirrorlist-4.11-1
+               endeavouros-skel-default-1.9-1  endeavouros-skel-xfce4-3.4-1
+               endeavouros-theming-22.12.1.1-1  endeavouros-xfce4-terminal-colors-5-1
+               eos-apps-info-1.6-1  eos-bash-shared-1.41-1  eos-hooks-1.10-1
+               eos-lightdm-slick-theme-3.2-1  eos-log-tool-1.14-5  eos-packagelist-2.1-1
+               eos-quickstart-1.3.1-1  eos-translations-23-6  ethtool-1:6.1-1  exo-4.18.0-1
+               file-5.44-1  findutils-4.9.0-2  firefox-109.0-1  firewalld-1.3.0-1  flex-2.6.4-4
+               fluidsynth-2.3.1-1  fsarchiver-0.8.6-2  fuse-common-3.13.0-1  fuse3-3.13.0-1
+               fzf-0.37.0-1  garcon-4.18.0-1  gcc-12.2.1-1  gcc-libs-12.2.1-1  gd-2.3.3-6
+               gdk-pixbuf2-2.42.10-2  geoip-database-20230120-1  git-2.39.1-1  glib2-2.74.5-1
+               glibc-2.36-7  gnu-netcat-0.7.1-9  gpgme-1.18.0-2  grub-2:2.06.r440.g4de39a2af-1
+               gst-libav-1.20.5-5  gst-plugin-pipewire-1:0.3.64-1  gst-plugins-bad-1.20.5-5
+               gst-plugins-bad-libs-1.20.5-5  gst-plugins-base-1.20.5-5
+               gst-plugins-base-libs-1.20.5-5  gst-plugins-good-1.20.5-5  gst-plugins-ugly-1.20.5-5
+               gstreamer-1.20.5-5  gtk-update-icon-cache-1:4.8.3-3  gtk3-1:3.24.36-1  guile-3.0.9-1
+               gupnp-1:1.6.3-1  gvfs-1.50.3-1  gvfs-afc-1.50.3-1  gvfs-gphoto2-1.50.3-1
+               gvfs-mtp-1.50.3-1  gvfs-nfs-1.50.3-1  gvfs-smb-1.50.3-1  harfbuzz-6.0.0-1
+               harfbuzz-icu-6.0.0-1  hidapi-0.13.1-1  hwdata-0.366-1  hwdetect-2023.01-1
+               hwinfo-22.2-1  iana-etc-20221215-1  imagemagick-7.1.0.58-1  imath-3.1.6-2
+               imlib2-1.10.0-2  inxi-3.3.24.1-4  iproute2-6.1.0-3  iptables-nft-1:1.8.8-3
+               iwd-2.2-1  lcms2-2.14-2  libarchive-3.6.2-2  libcamera-0.0.3-4  libelf-0.188-2
+               libgit2-1:1.5.1-2  libglvnd-1.6.0-1  libgusb-0.4.3-1  libheif-1.14.2-1
+               libical-3.0.16-4  libiec61883-1.2.0-7  libinput-1.22.1-1  libkeybinder3-0.3.2-4
+               libksba-1.6.3-1  liblc3-1.0.1-1  libmfx-23.1.0-1  libmm-glib-1.20.4-1
+               libmodplug-0.8.9.0-5  libmpc-1.3.1-1  libnice-0.1.21-1  libnm-1.40.12-1
+               libnma-1.10.6-1  libnma-common-1.10.6-1  libomxil-bellagio-0.9.3-4
+               libopenmpt-0.6.7-1  libopenraw-0.3.3-1  libpcap-1.10.3-1  libproxy-0.4.18-2
+               libpsl-0.21.2-1  libraqm-0.10.0-1  libsigc++-2.12.0-1  libsm-1.2.4-1
+               libsndfile-1.2.0-1  libsoxr-0.1.3-3  libsysprof-capture-3.46.0-3  libtiff-4.5.0-1
+               libtool-2.4.7+4+g1ec8fa28-1  libva-2.17.0-1  libwacom-2.6.0-1  libwbclient-4.17.4-4
+               libwebp-1.3.0-2  libwireplumber-0.4.13-1  libx11-1.8.3-6  libxfce4ui-4.18.1-1
+               libxfce4util-4.18.1-1  libxkbcommon-1.5.0-1  libxkbcommon-x11-1.5.0-1
+               libxpm-3.5.15-1  linux-6.1.8.arch1-1  linux-firmware-20230117.7e4f0ed-1
+               linux-firmware-whence-20230117.7e4f0ed-1  linux-headers-6.1.8.arch1-1
+               llvm-libs-15.0.7-1  logrotate-3.21.0-2  lua-5.4.4-3  lvm2-2.03.18-4  lzo-2.10-5
+               m4-1.4.19-2  make-4.4-1  man-db-2.11.2-1  man-pages-6.02-1  mesa-22.3.3-3
+               mobile-broadband-provider-info-20221107-2  modemmanager-1.20.4-1  mpfr-4.2.0-2
+               mpg123-1.31.2-1  nano-7.2-1  ncurses-6.4-1  ndctl-75-1  neon-0.32.5-1
+               net-tools-2.10-2  netctl-1.28-2  networkmanager-1.40.12-1  nftables-1:1.0.6-1
+               nilfs-utils-2.2.9-2  nss-3.87-1  ntp-4.2.8.p15-3  openjpeg2-2.5.0-2  openssl-3.0.7-4
+               pacman-contrib-1.8.2-1  pahole-1:1.24+r29+g02d67c5-1  parallel-20230122-1
+               pciutils-3.9.0-2  pcre2-10.41-1  pcsclite-1.9.9-2  perl-5.36.0-3
+               perl-encode-locale-1.05-10  perl-html-tagset-3.20-13  perl-http-date-6.05-6
+               perl-http-negotiate-6.01-11  perl-lwp-mediatypes-6.04-3  perl-www-robotrules-6.02-11
+               pipewire-1:0.3.64-1  pipewire-alsa-1:0.3.64-1  pipewire-audio-1:0.3.64-1
+               pipewire-jack-1:0.3.64-1  pipewire-pulse-1:0.3.64-1  poppler-23.01.0-3
+               poppler-glib-23.01.0-3  pptpclient-1.10.0-3  psmisc-23.6-1  python-3.10.9-1
+               python-setproctitle-1.3.2-1  python-termcolor-2.2.0-1  qrencode-4.1.1-2
+               qt5-base-5.15.8+kde+r177-1  qt5-translations-5.15.8-1  qt6-base-6.4.2-1
+               qt6-declarative-6.4.2-1  qt6-translations-6.4.2-1  rav1e-0.6.3-1  readline-8.2.001-2
+               reiserfsprogs-3.6.27-4  ripgrep-13.0.0-3  ristretto-0.12.4-1  rsync-3.2.7-3
+               sdl2-2.26.2-1  shadow-4.13-2  shared-mime-info-2.2+13+ga2ffb28-1  slang-2.3.3-2
+               smbclient-4.17.4-4  sof-firmware-2.2.4-1  spandsp-0.0.6-4  sqlite-3.40.1-1
+               sudo-1.9.12.p2-1  svt-av1-1.4.1-1  systemd-252.4-2  systemd-libs-252.4-2
+               systemd-sysvcompat-252.4-2  texinfo-7.0.2-1  thunar-4.18.3-1  thunar-volman-4.18.0-1
+               ttf-bitstream-vera-1.10-15  tumbler-4.18.0-1  unrar-1:6.2.5-1
+               virtualbox-guest-utils-7.0.6-1  webkit2gtk-2.38.3-1  welcome-3.46-1  whois-5.5.15-1
+               wildmidi-0.4.5-1  wireplumber-0.4.13-1  wpa_supplicant-2:2.10-8  xcb-util-0.4.1-1
+               xf86-video-vmware-13.4.0-1  xfce4-appfinder-4.18.0-1  xfce4-datetime-plugin-0.8.3-1
+               xfce4-notifyd-0.7.2-1  xfce4-panel-4.18.1-1  xfce4-power-manager-4.18.0-1
+               xfce4-screenshooter-1.10.3-1  xfce4-session-4.18.0-1  xfce4-settings-4.18.1-1
+               xfce4-taskmanager-1.5.5-1  xfce4-whiskermenu-plugin-2.7.2-1  xfconf-4.18.0-1
+               xfdesktop-4.18.1-1  xfsprogs-6.1.1-2  xfwm4-4.18.0-1  xorg-server-21.1.6-1
+               xorg-server-common-21.1.6-1  xterm-378-1  xz-5.4.1-1  yad-12.3-1.1
+               yad-eos-12.1-1.1 [removal]  yay-11.3.2-1  zvbi-0.2.39-1  zxing-cpp-2.0.0-1
+
+Total Download Size:      5,07 MiB
+Total Installed Size:  2883,73 MiB
+Net Upgrade Size:        73,72 MiB
+
+:: Proceed with installation? [Y/n] y
+:: Retrieving packages...
+ openssl-3.0.7-4-x86_64            5,1 MiB  4,53 MiB/s 00:01 [--------------------------------] 100%
+(261/261) checking keys in keyring                           [--------------------------------] 100%
+(261/261) checking package integrity                         [--------------------------------] 100%
+error: openssl: signature from "Pierre Schmitz <pierre@archlinux.org>" is marginal trust
+:: File /var/cache/pacman/pkg/openssl-3.0.7-4-x86_64.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
+Do you want to delete it? [Y/n] n
+error: failed to commit transaction (invalid or corrupted package)
+Errors occurred, no packages were upgraded.
+[pi@pi ~]$ pacman -Scc
+error: you cannot perform this operation unless you are root.
+[pi@pi ~]$ sudo pacman -Scc
+
+Cache directory: /var/cache/pacman/pkg/
+:: Do you want to remove ALL files from cache? [y/N] y
+removing all files from cache...
+
+Database directory: /var/lib/pacman/
+:: Do you want to remove unused repositories? [Y/n] y
+removing unused sync repositories...
+[pi@pi ~]$ pacman -Syyu
+error: you cannot perform this operation unless you are root.
+[pi@pi ~]$ sudo pacman -Syyu
+:: Synchronizing package databases...
+ endeavouros                      31,1 KiB  49,3 KiB/s 00:01 [--------------------------------] 100%
+ core                            154,9 KiB   504 KiB/s 00:00 [--------------------------------] 100%
+ extra                          1745,6 KiB  2,02 MiB/s 00:01 [--------------------------------] 100%
+ community                         7,2 MiB  3,91 MiB/s 00:02 [--------------------------------] 100%
+ multilib                        164,9 KiB   652 KiB/s 00:00 [--------------------------------] 100%
+:: Starting full system upgrade...
+:: Replace yad-eos with endeavouros/yad? [Y/n] y
+resolving dependencies...
+looking for conflicting packages...
+warning: dependency cycle detected:
+warning: mesa will be installed before its libglvnd dependency
+
+warning: insufficient columns available for table display
+Packages (262) a52dec-0.7.4-12  aalib-1.4rc5-15  alsa-card-profiles-1:0.3.64-1
+               amd-ucode-20230117.7e4f0ed-1  arc-gtk-theme-eos-20221218-1
+               archlinux-keyring-20221220-1  audit-3.0.9-1  b43-fwcutter-019-4  bind-9.18.10-1
+               binutils-2.40-2  btrfs-progs-6.1.2-1  ca-certificates-mozilla-3.87-1
+               chromaprint-1.5.1-6  cifs-utils-7.0-2  code-1.74.3-1  curl-7.87.0-3  db-6.2.32-1
+               db5.3-5.3.28-2  default-cursors-2-1  device-mapper-2.03.18-4
+               dialog-1:1.3_20221229-1  dosfstools-4.2-3  duktape-2.7.0-5  electron19-19.1.9-3
+               elementary-icon-theme-7.1.0-1  ell-0.56-1  endeavouros-mirrorlist-4.11-1
+               endeavouros-skel-default-1.9-1  endeavouros-skel-xfce4-3.4-1
+               endeavouros-theming-22.12.1.1-1  endeavouros-xfce4-terminal-colors-5-1
+               eos-apps-info-1.6-1  eos-bash-shared-1.41-1  eos-hooks-1.10-1
+               eos-lightdm-slick-theme-3.2-1  eos-log-tool-1.14-5  eos-packagelist-2.1-1
+               eos-quickstart-1.3.1-1  eos-translations-23-6  ethtool-1:6.1-1  exo-4.18.0-1
+               file-5.44-1  findutils-4.9.0-2  firefox-109.0-1  firewalld-1.3.0-1  flex-2.6.4-4
+               fluidsynth-2.3.1-1  fsarchiver-0.8.6-2  fuse-common-3.13.0-1  fuse3-3.13.0-1
+               fzf-0.37.0-1  garcon-4.18.0-1  gcc-12.2.1-1  gcc-libs-12.2.1-1  gd-2.3.3-6
+               gdk-pixbuf2-2.42.10-2  geoip-database-20230120-1  git-2.39.1-1  glib2-2.74.5-1
+               glibc-2.36-7  gnu-netcat-0.7.1-9  gpgme-1.18.0-2  grub-2:2.06.r440.g4de39a2af-1
+               gst-libav-1.20.5-5  gst-plugin-pipewire-1:0.3.64-1  gst-plugins-bad-1.20.5-5
+               gst-plugins-bad-libs-1.20.5-5  gst-plugins-base-1.20.5-5
+               gst-plugins-base-libs-1.20.5-5  gst-plugins-good-1.20.5-5  gst-plugins-ugly-1.20.5-5
+               gstreamer-1.20.5-5  gtk-update-icon-cache-1:4.8.3-3  gtk3-1:3.24.36-1  guile-3.0.9-1
+               gupnp-1:1.6.3-1  gvfs-1.50.3-1  gvfs-afc-1.50.3-1  gvfs-gphoto2-1.50.3-1
+               gvfs-mtp-1.50.3-1  gvfs-nfs-1.50.3-1  gvfs-smb-1.50.3-1  harfbuzz-6.0.0-1
+               harfbuzz-icu-6.0.0-1  hidapi-0.13.1-1  hwdata-0.366-1  hwdetect-2023.01-1
+               hwinfo-22.2-1  iana-etc-20221215-1  imagemagick-7.1.0.58-1  imath-3.1.6-2
+               imlib2-1.10.0-2  inxi-3.3.24.1-4  iproute2-6.1.0-3  iptables-nft-1:1.8.8-3
+               iwd-2.2-1  lcms2-2.14-2  libarchive-3.6.2-2  libcamera-0.0.3-4  libelf-0.188-2
+               libgit2-1:1.5.1-2  libglvnd-1.6.0-1  libgusb-0.4.3-1  libheif-1.14.2-1
+               libical-3.0.16-4  libiec61883-1.2.0-7  libinput-1.22.1-1  libkeybinder3-0.3.2-4
+               libksba-1.6.3-1  liblc3-1.0.1-1  libmfx-23.1.0-1  libmm-glib-1.20.4-1
+               libmodplug-0.8.9.0-5  libmpc-1.3.1-1  libnice-0.1.21-1  libnm-1.40.12-1
+               libnma-1.10.6-1  libnma-common-1.10.6-1  libomxil-bellagio-0.9.3-4
+               libopenmpt-0.6.7-1  libopenraw-0.3.3-1  libpcap-1.10.3-1  libproxy-0.4.18-2
+               libpsl-0.21.2-1  libraqm-0.10.0-1  libsigc++-2.12.0-1  libsm-1.2.4-1
+               libsndfile-1.2.0-1  libsoxr-0.1.3-3  libsysprof-capture-3.46.0-3  libtiff-4.5.0-1
+               libtool-2.4.7+4+g1ec8fa28-1  libva-2.17.0-1  libwacom-2.6.0-1  libwbclient-4.17.4-4
+               libwebp-1.3.0-2  libwireplumber-0.4.13-1  libx11-1.8.3-6  libxfce4ui-4.18.1-1
+               libxfce4util-4.18.1-1  libxkbcommon-1.5.0-1  libxkbcommon-x11-1.5.0-1
+               libxpm-3.5.15-1  linux-6.1.8.arch1-1  linux-firmware-20230117.7e4f0ed-1
+               linux-firmware-whence-20230117.7e4f0ed-1  linux-headers-6.1.8.arch1-1
+               llvm-libs-15.0.7-1  logrotate-3.21.0-2  lua-5.4.4-3  lvm2-2.03.18-4  lzo-2.10-5
+               m4-1.4.19-2  make-4.4-1  man-db-2.11.2-1  man-pages-6.02-1  mesa-22.3.3-3
+               mobile-broadband-provider-info-20221107-2  modemmanager-1.20.4-1  mpfr-4.2.0-2
+               mpg123-1.31.2-1  nano-7.2-1  ncurses-6.4-1  ndctl-75-1  neon-0.32.5-1
+               net-tools-2.10-2  netctl-1.28-2  networkmanager-1.40.12-1  nftables-1:1.0.6-1
+               nilfs-utils-2.2.9-2  nss-3.87-1  ntp-4.2.8.p15-3  openjpeg2-2.5.0-2  openssl-3.0.7-4
+               pacman-contrib-1.8.2-1  pahole-1:1.24+r29+g02d67c5-1  parallel-20230122-1
+               pciutils-3.9.0-2  pcre2-10.41-1  pcsclite-1.9.9-2  perl-5.36.0-3
+               perl-encode-locale-1.05-10  perl-html-tagset-3.20-13  perl-http-date-6.05-6
+               perl-http-negotiate-6.01-11  perl-lwp-mediatypes-6.04-3  perl-www-robotrules-6.02-11
+               pipewire-1:0.3.64-1  pipewire-alsa-1:0.3.64-1  pipewire-audio-1:0.3.64-1
+               pipewire-jack-1:0.3.64-1  pipewire-pulse-1:0.3.64-1  poppler-23.01.0-3
+               poppler-glib-23.01.0-3  pptpclient-1.10.0-3  psmisc-23.6-1  python-3.10.9-1
+               python-setproctitle-1.3.2-1  python-termcolor-2.2.0-1  qrencode-4.1.1-2
+               qt5-base-5.15.8+kde+r177-1  qt5-translations-5.15.8-1  qt6-base-6.4.2-1
+               qt6-declarative-6.4.2-1  qt6-translations-6.4.2-1  rav1e-0.6.3-1  readline-8.2.001-2
+               reiserfsprogs-3.6.27-4  ripgrep-13.0.0-3  ristretto-0.12.4-1  rsync-3.2.7-3
+               sdl2-2.26.2-1  shadow-4.13-2  shared-mime-info-2.2+13+ga2ffb28-1  slang-2.3.3-2
+               smbclient-4.17.4-4  sof-firmware-2.2.4-1  spandsp-0.0.6-4  sqlite-3.40.1-1
+               sudo-1.9.12.p2-1  svt-av1-1.4.1-1  systemd-252.4-2  systemd-libs-252.4-2
+               systemd-sysvcompat-252.4-2  texinfo-7.0.2-1  thunar-4.18.3-1  thunar-volman-4.18.0-1
+               ttf-bitstream-vera-1.10-15  tumbler-4.18.0-1  unrar-1:6.2.5-1
+               virtualbox-guest-utils-7.0.6-1  webkit2gtk-2.38.3-1  welcome-3.46-1  whois-5.5.15-1
+               wildmidi-0.4.5-1  wireplumber-0.4.13-1  wpa_supplicant-2:2.10-8  xcb-util-0.4.1-1
+               xf86-video-vmware-13.4.0-1  xfce4-appfinder-4.18.0-1  xfce4-datetime-plugin-0.8.3-1
+               xfce4-notifyd-0.7.2-1  xfce4-panel-4.18.1-1  xfce4-power-manager-4.18.0-1
+               xfce4-screenshooter-1.10.3-1  xfce4-session-4.18.0-1  xfce4-settings-4.18.1-1
+               xfce4-taskmanager-1.5.5-1  xfce4-whiskermenu-plugin-2.7.2-1  xfconf-4.18.0-1
+               xfdesktop-4.18.1-1  xfsprogs-6.1.1-2  xfwm4-4.18.0-1  xorg-server-21.1.6-1
+               xorg-server-common-21.1.6-1  xterm-378-1  xz-5.4.1-1  yad-12.3-1.1
+               yad-eos-12.1-1.1 [removal]  yay-11.3.2-1  zvbi-0.2.39-1  zxing-cpp-2.0.0-1
+
+Total Download Size:    911,47 MiB
+Total Installed Size:  2883,73 MiB
+Net Upgrade Size:        73,72 MiB
+
+:: Proceed with installation? [Y/n] y
+:: Retrieving packages...
+ gcc-12.2.1-1-x86_64              44,6 MiB  1129 KiB/s 00:40 [--------------------------------] 100%
+ electron19-19.1.9-3-x86_64       54,8 MiB  1127 KiB/s 00:50 [--------------------------------] 100%
+ firefox-109.0-1-x86_64           64,7 MiB  1123 KiB/s 00:59 [--------------------------------] 100%
+ gcc-libs-12.2.1-1-x86_64         33,9 MiB  1195 KiB/s 00:29 [--------------------------------] 100%
+ llvm-libs-15.0.7-1-x86_64        29,3 MiB  1186 KiB/s 00:25 [--------------------------------] 100%
+ linux-headers-6.1.8.arch1-...    26,6 MiB  1185 KiB/s 00:23 [--------------------------------] 100%
+ perl-5.36.0-3-x86_64             15,6 MiB  1317 KiB/s 00:12 [--------------------------------] 100%
+ webkit2gtk-2.38.3-1-x86_64       24,0 MiB  1198 KiB/s 00:20 [--------------------------------] 100%
+ code-1.74.3-1-x86_64             14,1 MiB  1355 KiB/s 00:11 [--------------------------------] 100%
+ qt5-base-5.15.8+kde+r177-1...    13,0 MiB  1293 KiB/s 00:10 [--------------------------------] 100%
+ qt6-base-6.4.2-1-x86_64          12,8 MiB  1283 KiB/s 00:10 [--------------------------------] 100%
+ python-3.10.9-1-x86_64           12,0 MiB  1332 KiB/s 00:09 [--------------------------------] 100%
+ qt6-declarative-6.4.2-1-x86_64   10,8 MiB  1464 KiB/s 00:08 [--------------------------------] 100%
+ mesa-22.3.3-3-x86_64             10,5 MiB  1232 KiB/s 00:09 [--------------------------------] 100%
+ glibc-2.36-7-x86_64               9,8 MiB  1598 KiB/s 00:06 [--------------------------------] 100%
+ guile-3.0.9-1-x86_64              8,1 MiB  1659 KiB/s 00:05 [--------------------------------] 100%
+ gtk3-1:3.24.36-1-x86_64           7,7 MiB  1934 KiB/s 00:04 [--------------------------------] 100%
+ systemd-252.4-2-x86_64            7,4 MiB  1615 KiB/s 00:05 [--------------------------------] 100%
+ binutils-2.40-2-x86_64            7,1 MiB  2,20 MiB/s 00:03 [--------------------------------] 100%
+ grub-2:2.06.r440.g4de39a2a...     6,8 MiB  1731 KiB/s 00:04 [--------------------------------] 100%
+ smbclient-4.17.4-4-x86_64         6,7 MiB  1755 KiB/s 00:04 [--------------------------------] 100%
+ git-2.39.1-1-x86_64               6,6 MiB  1518 KiB/s 00:04 [--------------------------------] 100%
+ man-pages-6.02-1-any              5,5 MiB  1914 KiB/s 00:03 [--------------------------------] 100%
+ openssl-3.0.7-4-x86_64            5,1 MiB  2,03 MiB/s 00:03 [--------------------------------] 100%
+ endeavouros-theming-22.12....    11,8 MiB   321 KiB/s 00:38 [--------------------------------] 100%
+ imath-3.1.6-2-x86_64              3,9 MiB  3,17 MiB/s 00:01 [--------------------------------] 100%
+ glib2-2.74.5-1-x86_64             3,7 MiB  2,76 MiB/s 00:01 [--------------------------------] 100%
+ networkmanager-1.40.12-1-x...     3,5 MiB  2,13 MiB/s 00:02 [--------------------------------] 100%
+ geoip-database-20230120-1-any     3,1 MiB  2,58 MiB/s 00:01 [--------------------------------] 100%
+ imagemagick-7.1.0.58-1-x86_64     2,9 MiB  1757 KiB/s 00:02 [--------------------------------] 100%
+ elementary-icon-theme-7.1....     2,6 MiB  1757 KiB/s 00:02 [--------------------------------] 100%
+ gst-plugins-bad-libs-1.20....     2,1 MiB  1915 KiB/s 00:01 [--------------------------------] 100%
+ gst-plugins-base-libs-1.20...     2,1 MiB  1820 KiB/s 00:01 [--------------------------------] 100%
+ libx11-1.8.3-6-x86_64             2,0 MiB  2,34 MiB/s 00:01 [--------------------------------] 100%
+ svt-av1-1.4.1-1-x86_64         2047,2 KiB  1751 KiB/s 00:01 [--------------------------------] 100%
+ gst-plugins-good-1.20.5-5-...  2010,2 KiB  1922 KiB/s 00:01 [--------------------------------] 100%
+ bind-9.18.10-1-x86_64          1972,9 KiB  1863 KiB/s 00:01 [--------------------------------] 100%
+ qt5-translations-5.15.8-1-any  1929,2 KiB  2,18 MiB/s 00:01 [--------------------------------] 100%
+ lvm2-2.03.18-4-x86_64          1906,1 KiB  2,00 MiB/s 00:01 [--------------------------------] 100%
+ yay-11.3.2-1-x86_64               2,5 MiB   330 KiB/s 00:08 [--------------------------------] 100%
+ ntp-4.2.8.p15-3-x86_64         1827,9 KiB  1748 KiB/s 00:01 [--------------------------------] 100%
+ gstreamer-1.20.5-5-x86_64      1813,6 KiB  1917 KiB/s 00:01 [--------------------------------] 100%
+ sudo-1.9.12.p2-1-x86_64        1764,8 KiB  1727 KiB/s 00:01 [--------------------------------] 100%
+ qt6-translations-6.4.2-1-any   1734,4 KiB  1938 KiB/s 00:01 [--------------------------------] 100%
+ wpa_supplicant-2:2.10-8-x86_64 1659,8 KiB  1690 KiB/s 00:01 [--------------------------------] 100%
+ texinfo-7.0.2-1-x86_64         1607,5 KiB  1717 KiB/s 00:01 [--------------------------------] 100%
+ linux-6.1.8.arch1-1-x86_64      164,1 MiB  1102 KiB/s 02:32 [--------------------------------] 100%
+ sqlite-3.40.1-1-x86_64         1606,1 KiB  1391 KiB/s 00:01 [--------------------------------] 100%
+ nss-3.87-1-x86_64              1581,8 KiB  1298 KiB/s 00:01 [--------------------------------] 100%
+ hwdata-0.366-1-any             1567,8 KiB  1905 KiB/s 00:01 [--------------------------------] 100%
+ rav1e-0.6.3-1-x86_64           1564,2 KiB  1917 KiB/s 00:01 [--------------------------------] 100%
+ poppler-23.01.0-3-x86_64       1564,1 KiB  1419 KiB/s 00:01 [--------------------------------] 100%
+ thunar-4.18.3-1-x86_64         1492,4 KiB  1155 KiB/s 00:01 [--------------------------------] 100%
+ xorg-server-21.1.6-1-x86_64    1476,8 KiB  1023 KiB/s 00:01 [--------------------------------] 100%
+ pcre2-10.41-1-x86_64           1466,0 KiB  1519 KiB/s 00:01 [--------------------------------] 100%
+ xfdesktop-4.18.1-1-x86_64      1400,1 KiB  1921 KiB/s 00:01 [--------------------------------] 100%
+ db-6.2.32-1-x86_64             1360,3 KiB  1501 KiB/s 00:01 [--------------------------------] 100%
+ modemmanager-1.20.4-1-x86_64   1323,2 KiB  1636 KiB/s 00:01 [--------------------------------] 100%
+ ripgrep-13.0.0-3-x86_64        1312,0 KiB  1792 KiB/s 00:01 [--------------------------------] 100%
+ libtiff-4.5.0-1-x86_64         1262,4 KiB  1788 KiB/s 00:01 [--------------------------------] 100%
+ db5.3-5.3.28-2-x86_64          1229,3 KiB  1739 KiB/s 00:01 [--------------------------------] 100%
+ linux-firmware-20230117.7e...   170,2 MiB  1101 KiB/s 02:38 [--------------------------------] 100%
+ fzf-0.37.0-1-x86_64            1204,6 KiB   937 KiB/s 00:01 [--------------------------------] 100%
+ libopenraw-0.3.3-1-x86_64      1199,9 KiB  2,91 MiB/s 00:00 [--------------------------------] 100%
+ shadow-4.13-2-x86_64           1196,0 KiB  2,62 MiB/s 00:00 [--------------------------------] 100%
+ gst-plugins-bad-1.20.5-5-x...  1184,9 KiB  1946 KiB/s 00:01 [--------------------------------] 100%
+ ncurses-6.4-1-x86_64           1182,1 KiB  1504 KiB/s 00:01 [--------------------------------] 100%
+ curl-7.87.0-3-x86_64           1178,0 KiB  1518 KiB/s 00:01 [--------------------------------] 100%
+ archlinux-keyring-20221220...  1153,7 KiB  3,02 MiB/s 00:00 [--------------------------------] 100%
+ iproute2-6.1.0-3-x86_64        1113,1 KiB  2,49 MiB/s 00:00 [--------------------------------] 100%
+ libgusb-0.4.3-1-x86_64         1122,8 KiB  1897 KiB/s 00:01 [--------------------------------] 100%
+ libnm-1.40.12-1-x86_64         1127,1 KiB  1523 KiB/s 00:01 [--------------------------------] 100%
+ man-db-2.11.2-1-x86_64         1110,5 KiB  1509 KiB/s 00:01 [--------------------------------] 100%
+ harfbuzz-6.0.0-1-x86_64        1048,9 KiB  2,88 MiB/s 00:00 [--------------------------------] 100%
+ xfsprogs-6.1.1-2-x86_64        1029,9 KiB  2,32 MiB/s 00:00 [--------------------------------] 100%
+ gvfs-1.50.3-1-x86_64           1021,6 KiB  1847 KiB/s 00:01 [--------------------------------] 100%
+ firewalld-1.3.0-1-any          1025,5 KiB  1501 KiB/s 00:01 [--------------------------------] 100%
+ hwinfo-22.2-1-x86_64           1018,7 KiB  1492 KiB/s 00:01 [--------------------------------] 100%
+ pipewire-1:0.3.64-1-x86_64     1007,7 KiB  2,96 MiB/s 00:00 [--------------------------------] 100%
+ openjpeg2-2.5.0-2-x86_64        928,5 KiB  2,29 MiB/s 00:00 [--------------------------------] 100%
+ sdl2-2.26.2-1-x86_64            987,3 KiB  1913 KiB/s 00:01 [--------------------------------] 100%
+ btrfs-progs-6.1.2-1-x86_64      953,9 KiB  1507 KiB/s 00:01 [--------------------------------] 100%
+ xfce4-settings-4.18.1-1-x86_64  889,1 KiB  1436 KiB/s 00:01 [--------------------------------] 100%
+ pipewire-audio-1:0.3.64-1-...   860,2 KiB  2,94 MiB/s 00:00 [--------------------------------] 100%
+ libgit2-1:1.5.1-2-x86_64        849,2 KiB  2,35 MiB/s 00:00 [--------------------------------] 100%
+ libcamera-0.0.3-4-x86_64        837,6 KiB  1821 KiB/s 00:00 [--------------------------------] 100%
+ slang-2.3.3-2-x86_64            826,1 KiB  1475 KiB/s 00:01 [--------------------------------] 100%
+ xfce4-panel-4.18.1-1-x86_64     786,4 KiB  1440 KiB/s 00:01 [--------------------------------] 100%
+ libmm-glib-1.20.4-1-x86_64      786,2 KiB  2,96 MiB/s 00:00 [--------------------------------] 100%
+ virtualbox-guest-utils-7.0...   736,6 KiB  2,20 MiB/s 00:00 [--------------------------------] 100%
+ sof-firmware-2.2.4-1-x86_64     646,4 KiB  1616 KiB/s 00:00 [--------------------------------] 100%
+ libopenmpt-0.6.7-1-x86_64       687,7 KiB  1463 KiB/s 00:00 [--------------------------------] 100%
+ systemd-libs-252.4-2-x86_64     641,9 KiB  1449 KiB/s 00:00 [--------------------------------] 100%
+ libical-3.0.16-4-x86_64         614,2 KiB  2,91 MiB/s 00:00 [--------------------------------] 100%
+ zxing-cpp-2.0.0-1-x86_64        570,9 KiB  2,14 MiB/s 00:00 [--------------------------------] 100%
+ shared-mime-info-2.2+13+ga...   609,2 KiB  1771 KiB/s 00:00 [--------------------------------] 100%
+ nano-7.2-1-x86_64               598,6 KiB  1523 KiB/s 00:00 [--------------------------------] 100%
+ iwd-2.2-1-x86_64                562,9 KiB  1470 KiB/s 00:00 [--------------------------------] 100%
+ imlib2-1.10.0-2-x86_64          561,2 KiB  2,88 MiB/s 00:00 [--------------------------------] 100%
+ libelf-0.188-2-x86_64           550,0 KiB  2,12 MiB/s 00:00 [--------------------------------] 100%
+ libarchive-3.6.2-2-x86_64       522,3 KiB  1653 KiB/s 00:00 [--------------------------------] 100%
+ xfce4-power-manager-4.18.0...   545,1 KiB  1489 KiB/s 00:00 [--------------------------------] 100%
+ make-4.4-1-x86_64               519,2 KiB  1430 KiB/s 00:00 [--------------------------------] 100%
+ gdk-pixbuf2-2.42.10-2-x86_64    516,7 KiB  2,97 MiB/s 00:00 [--------------------------------] 100%
+ xz-5.4.1-1-x86_64               511,5 KiB  2,17 MiB/s 00:00 [--------------------------------] 100%
+ gpgme-1.18.0-2-x86_64           447,1 KiB  1597 KiB/s 00:00 [--------------------------------] 100%
+ xfwm4-4.18.0-1-x86_64           493,6 KiB  1542 KiB/s 00:00 [--------------------------------] 100%
+ xterm-378-1-x86_64              446,0 KiB  1407 KiB/s 00:00 [--------------------------------] 100%
+ mpg123-1.31.2-1-x86_64          438,1 KiB  3,22 MiB/s 00:00 [--------------------------------] 100%
+ iptables-nft-1:1.8.8-3-x86_64   431,5 KiB  1852 KiB/s 00:00 [--------------------------------] 100%
+ spandsp-0.0.6-4-x86_64          424,1 KiB  1520 KiB/s 00:00 [--------------------------------] 100%
+ mpfr-4.2.0-2-x86_64             427,4 KiB  1410 KiB/s 00:00 [--------------------------------] 100%
+ findutils-4.9.0-2-x86_64        418,1 KiB  1477 KiB/s 00:00 [--------------------------------] 100%
+ libtool-2.4.7+4+g1ec8fa28-...   412,4 KiB  3,27 MiB/s 00:00 [--------------------------------] 100%
+ iana-etc-20221215-1-any         395,6 KiB  1978 KiB/s 00:00 [--------------------------------] 100%
+ nftables-1:1.0.6-1-x86_64       386,5 KiB  1725 KiB/s 00:00 [--------------------------------] 100%
+ audit-3.0.9-1-x86_64            387,3 KiB  1055 KiB/s 00:00 [--------------------------------] 100%
+ file-5.44-1-x86_64              385,2 KiB   832 KiB/s 00:00 [--------------------------------] 100%
+ libxfce4ui-4.18.1-1-x86_64      377,4 KiB  1692 KiB/s 00:00 [--------------------------------] 100%
+ zvbi-0.2.39-1-x86_64            374,3 KiB  2,88 MiB/s 00:00 [--------------------------------] 100%
+ ndctl-75-1-x86_64               360,9 KiB  2,87 MiB/s 00:00 [--------------------------------] 100%
+ libglvnd-1.6.0-1-x86_64         355,2 KiB  2,89 MiB/s 00:00 [--------------------------------] 100%
+ ca-certificates-mozilla-3....   354,3 KiB  2,79 MiB/s 00:00 [--------------------------------] 100%
+ libwebp-1.3.0-2-x86_64          345,0 KiB  2,81 MiB/s 00:00 [--------------------------------] 100%
+ xfce4-session-4.18.0-1-x86_64   336,1 KiB  2,74 MiB/s 00:00 [--------------------------------] 100%
+ rsync-3.2.7-3-x86_64            336,0 KiB  2,73 MiB/s 00:00 [--------------------------------] 100%
+ gst-plugins-base-1.20.5-5-...   327,4 KiB  2,76 MiB/s 00:00 [--------------------------------] 100%
+ parallel-20230122-1-any         323,7 KiB  2,66 MiB/s 00:00 [--------------------------------] 100%
+ readline-8.2.001-2-x86_64       323,1 KiB  2,87 MiB/s 00:00 [--------------------------------] 100%
+ exo-4.18.0-1-x86_64             319,9 KiB  3,00 MiB/s 00:00 [--------------------------------] 100%
+ libsndfile-1.2.0-1-x86_64       316,2 KiB  2,73 MiB/s 00:00 [--------------------------------] 100%
+ libnice-0.1.21-1-x86_64         314,5 KiB  2,72 MiB/s 00:00 [--------------------------------] 100%
+ pahole-1:1.24+r29+g02d67c5...   313,0 KiB  2,68 MiB/s 00:00 [--------------------------------] 100%
+ lua-5.4.4-3-x86_64              310,0 KiB  2,75 MiB/s 00:00 [--------------------------------] 100%
+ flex-2.6.4-4-x86_64             307,7 KiB  2,76 MiB/s 00:00 [--------------------------------] 100%
+ inxi-3.3.24.1-4-any             302,9 KiB  2,87 MiB/s 00:00 [--------------------------------] 100%
+ device-mapper-2.03.18-4-x86_64  294,8 KiB  2,77 MiB/s 00:00 [--------------------------------] 100%
+ poppler-glib-23.01.0-3-x86_64   289,3 KiB  2,74 MiB/s 00:00 [--------------------------------] 100%
+ libpcap-1.10.3-1-x86_64         285,1 KiB  2,99 MiB/s 00:00 [--------------------------------] 100%
+ libinput-1.22.1-1-x86_64        279,8 KiB  2,91 MiB/s 00:00 [--------------------------------] 100%
+ arc-gtk-theme-eos-20221218...   371,5 KiB   290 KiB/s 00:01 [--------------------------------] 100%
+ fluidsynth-2.3.1-1-x86_64       267,6 KiB  2,81 MiB/s 00:00 [--------------------------------] 100%
+ libheif-1.14.2-1-x86_64         264,7 KiB  2,87 MiB/s 00:00 [--------------------------------] 100%
+ psmisc-23.6-1-x86_64            250,7 KiB  2,60 MiB/s 00:00 [--------------------------------] 100%
+ m4-1.4.19-2-x86_64              246,0 KiB  2,13 MiB/s 00:00 [--------------------------------] 100%
+ ristretto-0.12.4-1-x86_64       245,9 KiB  2,24 MiB/s 00:00 [--------------------------------] 100%
+ ell-0.56-1-x86_64               236,5 KiB  2,38 MiB/s 00:00 [--------------------------------] 100%
+ ttf-bitstream-vera-1.10-15-any  232,5 KiB  2,20 MiB/s 00:00 [--------------------------------] 100%
+ gst-plugins-ugly-1.20.5-5-...   221,4 KiB  2,08 MiB/s 00:00 [--------------------------------] 100%
+ libwireplumber-0.4.13-1-x86_64  220,7 KiB  2,22 MiB/s 00:00 [--------------------------------] 100%
+ reiserfsprogs-3.6.27-4-x86_64   214,8 KiB  2007 KiB/s 00:00 [--------------------------------] 100%
+ lcms2-2.14-2-x86_64             214,4 KiB  3,32 MiB/s 00:00 [--------------------------------] 100%
+ xfce4-whiskermenu-plugin-2...   211,7 KiB  2,58 MiB/s 00:00 [--------------------------------] 100%
+ neon-0.32.5-1-x86_64            209,4 KiB  2,46 MiB/s 00:00 [--------------------------------] 100%
+ wireplumber-0.4.13-1-x86_64     207,6 KiB  2,53 MiB/s 00:00 [--------------------------------] 100%
+ libxkbcommon-1.5.0-1-x86_64     203,2 KiB  1328 KiB/s 00:00 [--------------------------------] 100%
+ dialog-1:1.3_20221229-1-x86_64  200,1 KiB  1334 KiB/s 00:00 [--------------------------------] 100%
+ ethtool-1:6.1-1-x86_64          193,8 KiB  1538 KiB/s 00:00 [--------------------------------] 100%
+ libnma-common-1.10.6-1-x86_64   192,1 KiB  1478 KiB/s 00:00 [--------------------------------] 100%
+ xfconf-4.18.0-1-x86_64          184,2 KiB  1789 KiB/s 00:00 [--------------------------------] 100%
+ eos-apps-info-1.6-1-any         364,6 KiB   149 KiB/s 00:02 [--------------------------------] 100%
+ libva-2.17.0-1-x86_64           183,2 KiB  1378 KiB/s 00:00 [--------------------------------] 100%
+ xfce4-screenshooter-1.10.3...   182,1 KiB  1301 KiB/s 00:00 [--------------------------------] 100%
+ duktape-2.7.0-5-x86_64          176,9 KiB  1404 KiB/s 00:00 [--------------------------------] 100%
+ libmodplug-0.8.9.0-5-x86_64     166,9 KiB  1439 KiB/s 00:00 [--------------------------------] 100%
+ garcon-4.18.0-1-x86_64          166,8 KiB  1516 KiB/s 00:00 [--------------------------------] 100%
+ tumbler-4.18.0-1-x86_64         165,4 KiB  1244 KiB/s 00:00 [--------------------------------] 100%
+ pipewire-pulse-1:0.3.64-1-...   164,2 KiB  1549 KiB/s 00:00 [--------------------------------] 100%
+ gd-2.3.3-6-x86_64               155,6 KiB  2,53 MiB/s 00:00 [--------------------------------] 100%
+ pipewire-jack-1:0.3.64-1-x...   149,3 KiB  1736 KiB/s 00:00 [--------------------------------] 100%
+ xfce4-appfinder-4.18.0-1-x...   162,7 KiB  1479 KiB/s 00:00 [--------------------------------] 100%
+ xfce4-notifyd-0.7.2-1-x86_64    142,8 KiB  2,97 MiB/s 00:00 [--------------------------------] 100%
+ unrar-1:6.2.5-1-x86_64          140,4 KiB  2006 KiB/s 00:00 [--------------------------------] 100%
+ net-tools-2.10-2-x86_64         140,0 KiB  1842 KiB/s 00:00 [--------------------------------] 100%
+ libksba-1.6.3-1-x86_64          139,7 KiB  2,31 MiB/s 00:00 [--------------------------------] 100%
+ yad-12.3-1.1-x86_64             218,0 KiB   147 KiB/s 00:01 [--------------------------------] 100%
+ libxfce4util-4.18.1-1-x86_64    135,1 KiB  2016 KiB/s 00:00 [--------------------------------] 100%
+ aalib-1.4rc5-15-x86_64          134,9 KiB  1625 KiB/s 00:00 [--------------------------------] 100%
+ dosfstools-4.2-3-x86_64         134,8 KiB  2012 KiB/s 00:00 [--------------------------------] 100%
+ thunar-volman-4.18.0-1-x86_64   131,5 KiB  1879 KiB/s 00:00 [--------------------------------] 100%
+ gupnp-1:1.6.3-1-x86_64          123,9 KiB  1967 KiB/s 00:00 [--------------------------------] 100%
+ fuse3-3.13.0-1-x86_64           123,6 KiB  1275 KiB/s 00:00 [--------------------------------] 100%
+ libomxil-bellagio-0.9.3-4-...   122,3 KiB  1359 KiB/s 00:00 [--------------------------------] 100%
+ nilfs-utils-2.2.9-2-x86_64      116,0 KiB  1289 KiB/s 00:00 [--------------------------------] 100%
+ libnma-1.10.6-1-x86_64          114,6 KiB  2,38 MiB/s 00:00 [--------------------------------] 100%
+ xfce4-taskmanager-1.5.5-1-...   111,2 KiB  1390 KiB/s 00:00 [--------------------------------] 100%
+ libwacom-2.6.0-1-x86_64         111,1 KiB  1048 KiB/s 00:00 [--------------------------------] 100%
+ pciutils-3.9.0-2-x86_64         110,3 KiB  1103 KiB/s 00:00 [--------------------------------] 100%
+ fsarchiver-0.8.6-2-x86_64       102,9 KiB  1072 KiB/s 00:00 [--------------------------------] 100%
+ pcsclite-1.9.9-2-x86_64          96,3 KiB  1816 KiB/s 00:00 [--------------------------------] 100%
+ gst-libav-1.20.5-5-x86_64        93,0 KiB  1328 KiB/s 00:00 [--------------------------------] 100%
+ wildmidi-0.4.5-1-x86_64          91,8 KiB  1311 KiB/s 00:00 [--------------------------------] 100%
+ cifs-utils-7.0-2-x86_64          90,4 KiB  1369 KiB/s 00:00 [--------------------------------] 100%
+ lzo-2.10-5-x86_64                87,8 KiB  1058 KiB/s 00:00 [--------------------------------] 100%
+ libproxy-0.4.18-2-x86_64         86,6 KiB  1732 KiB/s 00:00 [--------------------------------] 100%
+ libmpc-1.3.1-1-x86_64            84,2 KiB  1560 KiB/s 00:00 [--------------------------------] 100%
+ libpsl-0.21.2-1-x86_64           81,8 KiB  1168 KiB/s 00:00 [--------------------------------] 100%
+ liblc3-1.0.1-1-x86_64            80,1 KiB  1040 KiB/s 00:00 [--------------------------------] 100%
+ libsoxr-0.1.3-3-x86_64           78,3 KiB  1072 KiB/s 00:00 [--------------------------------] 100%
+ xf86-video-vmware-13.4.0-1...    75,9 KiB  1614 KiB/s 00:00 [--------------------------------] 100%
+ whois-5.5.15-1-x86_64            73,6 KiB  1363 KiB/s 00:00 [--------------------------------] 100%
+ libxpm-3.5.15-1-x86_64           71,6 KiB  1278 KiB/s 00:00 [--------------------------------] 100%
+ libsigc++-2.12.0-1-x86_64        68,2 KiB  1082 KiB/s 00:00 [--------------------------------] 100%
+ mobile-broadband-provider-...    63,2 KiB  1437 KiB/s 00:00 [--------------------------------] 100%
+ libmfx-23.1.0-1-x86_64           56,9 KiB  1138 KiB/s 00:00 [--------------------------------] 100%
+ gvfs-mtp-1.50.3-1-x86_64         48,8 KiB  1037 KiB/s 00:00 [--------------------------------] 100%
+ gvfs-gphoto2-1.50.3-1-x86_64     48,2 KiB  1338 KiB/s 00:00 [--------------------------------] 100%
+ logrotate-3.21.0-2-x86_64        47,4 KiB  1395 KiB/s 00:00 [--------------------------------] 100%
+ gst-plugin-pipewire-1:0.3....    46,7 KiB  1167 KiB/s 00:00 [--------------------------------] 100%
+ eos-translations-23-6-any        75,5 KiB   263 KiB/s 00:00 [--------------------------------] 100%
+ libsm-1.2.4-1-x86_64             45,9 KiB   998 KiB/s 00:00 [--------------------------------] 100%
+ a52dec-0.7.4-12-x86_64           45,8 KiB   973 KiB/s 00:00 [--------------------------------] 100%
+ chromaprint-1.5.1-6-x86_64       45,5 KiB  1137 KiB/s 00:00 [--------------------------------] 100%
+ libsysprof-capture-3.46.0-...    45,3 KiB  1031 KiB/s 00:00 [--------------------------------] 100%
+ pptpclient-1.10.0-3-x86_64       44,3 KiB  1343 KiB/s 00:00 [--------------------------------] 100%
+ eos-quickstart-1.3.1-1-x86_64    51,9 KiB   155 KiB/s 00:00 [--------------------------------] 100%
+ gvfs-afc-1.50.3-1-x86_64         43,6 KiB   692 KiB/s 00:00 [--------------------------------] 100%
+ pacman-contrib-1.8.2-1-x86_64    42,5 KiB  1418 KiB/s 00:00 [--------------------------------] 100%
+ netctl-1.28-2-any                41,4 KiB   690 KiB/s 00:00 [--------------------------------] 100%
+ eos-bash-shared-1.41-1-any       46,1 KiB   134 KiB/s 00:00 [--------------------------------] 100%
+ qrencode-4.1.1-2-x86_64          39,9 KiB   999 KiB/s 00:00 [--------------------------------] 100%
+ xfce4-datetime-plugin-0.8....    38,3 KiB   816 KiB/s 00:00 [--------------------------------] 100%
+ amd-ucode-20230117.7e4f0ed...    35,3 KiB   752 KiB/s 00:00 [--------------------------------] 100%
+ libwbclient-4.17.4-4-x86_64      35,1 KiB   462 KiB/s 00:00 [--------------------------------] 100%
+ libiec61883-1.2.0-7-x86_64       32,7 KiB   394 KiB/s 00:00 [--------------------------------] 100%
+ libraqm-0.10.0-1-x86_64          32,3 KiB   461 KiB/s 00:00 [--------------------------------] 100%
+ endeavouros-skel-xfce4-3.4...    35,3 KiB   204 KiB/s 00:00 [--------------------------------] 100%
+ linux-firmware-whence-2023...    30,0 KiB   638 KiB/s 00:00 [--------------------------------] 100%
+ gnu-netcat-0.7.1-9-x86_64        29,8 KiB   677 KiB/s 00:00 [--------------------------------] 100%
+ gvfs-smb-1.50.3-1-x86_64         29,6 KiB   559 KiB/s 00:00 [--------------------------------] 100%
+ welcome-3.46-1-any               34,0 KiB   144 KiB/s 00:00 [--------------------------------] 100%
+ hidapi-0.13.1-1-x86_64           29,6 KiB   987 KiB/s 00:00 [--------------------------------] 100%
+ xorg-server-common-21.1.6-...    27,8 KiB   591 KiB/s 00:00 [--------------------------------] 100%
+ alsa-card-profiles-1:0.3.6...    27,6 KiB  1062 KiB/s 00:00 [--------------------------------] 100%
+ libxkbcommon-x11-1.5.0-1-x...    22,5 KiB   561 KiB/s 00:00 [--------------------------------] 100%
+ gvfs-nfs-1.50.3-1-x86_64         21,2 KiB   321 KiB/s 00:00 [--------------------------------] 100%
+ libkeybinder3-0.3.2-4-x86_64     20,7 KiB   369 KiB/s 00:00 [--------------------------------] 100%
+ perl-lwp-mediatypes-6.04-3-any   19,4 KiB   277 KiB/s 00:00 [--------------------------------] 100%
+ b43-fwcutter-019-4-x86_64        19,2 KiB   384 KiB/s 00:00 [--------------------------------] 100%
+ gtk-update-icon-cache-1:4....    16,3 KiB   493 KiB/s 00:00 [--------------------------------] 100%
+ eos-log-tool-1.14-5-any          20,2 KiB   135 KiB/s 00:00 [--------------------------------] 100%
+ python-setproctitle-1.3.2-...    14,4 KiB   389 KiB/s 00:00 [--------------------------------] 100%
+ endeavouros-skel-default-1...    17,4 KiB   121 KiB/s 00:00 [--------------------------------] 100%
+ eos-hooks-1.10-1-any             17,1 KiB  93,7 KiB/s 00:00 [--------------------------------] 100%
+ eos-packagelist-2.1-1-any        15,2 KiB  87,6 KiB/s 00:00 [--------------------------------] 100%
+ eos-lightdm-slick-theme-3....    13,8 KiB  98,7 KiB/s 00:00 [--------------------------------] 100%
+ xcb-util-0.4.1-1-x86_64          12,4 KiB   310 KiB/s 00:00 [--------------------------------] 100%
+ endeavouros-xfce4-terminal...    13,5 KiB   123 KiB/s 00:00 [--------------------------------] 100%
+ perl-www-robotrules-6.02-1...    12,3 KiB   342 KiB/s 00:00 [--------------------------------] 100%
+ endeavouros-mirrorlist-4.1...    13,5 KiB  88,2 KiB/s 00:00 [--------------------------------] 100%
+ perl-http-negotiate-6.01-1...    12,3 KiB   332 KiB/s 00:00 [--------------------------------] 100%
+ perl-html-tagset-3.20-13-any     11,0 KiB   408 KiB/s 00:00 [--------------------------------] 100%
+ perl-encode-locale-1.05-10-any   10,8 KiB   328 KiB/s 00:00 [--------------------------------] 100%
+ python-termcolor-2.2.0-1-any     10,5 KiB   388 KiB/s 00:00 [--------------------------------] 100%
+ perl-http-date-6.05-6-any         9,7 KiB   323 KiB/s 00:00 [--------------------------------] 100%
+ harfbuzz-icu-6.0.0-1-x86_64       7,8 KiB   269 KiB/s 00:00 [--------------------------------] 100%
+ systemd-sysvcompat-252.4-2...     6,1 KiB   203 KiB/s 00:00 [--------------------------------] 100%
+ hwdetect-2023.01-1-any            5,6 KiB   187 KiB/s 00:00 [--------------------------------] 100%
+ pipewire-alsa-1:0.3.64-1-x...     4,8 KiB   142 KiB/s 00:00 [--------------------------------] 100%
+ fuse-common-3.13.0-1-x86_64       2,6 KiB  65,6 KiB/s 00:00 [--------------------------------] 100%
+ default-cursors-2-1-any           2,2 KiB  83,9 KiB/s 00:00 [--------------------------------] 100%
+ Total (261/261)                 911,5 MiB  5,34 MiB/s 02:51 [--------------------------------] 100%
+(261/261) checking keys in keyring                           [--------------------------------] 100%
+(261/261) checking package integrity                         [--------------------------------] 100%
+error: openssl: signature from "Pierre Schmitz <pierre@archlinux.org>" is marginal trust
+:: File /var/cache/pacman/pkg/openssl-3.0.7-4-x86_64.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
+Do you want to delete it? [Y/n] n
+error: failed to commit transaction (invalid or corrupted package)
+Errors occurred, no packages were upgraded.
+[pi@pi ~]$ sudo ntpd -qg
+30 Jan 23:41:28 ntpd[11712]: ntpd 4.2.8p15@1.3728-o Wed Nov  2 01:50:26 UTC 2022 (1): Starting
+30 Jan 23:41:28 ntpd[11712]: Command line: ntpd -qg
+30 Jan 23:41:28 ntpd[11712]: ----------------------------------------------------
+30 Jan 23:41:28 ntpd[11712]: ntp-4 is maintained by Network Time Foundation,
+30 Jan 23:41:28 ntpd[11712]: Inc. (NTF), a non-profit 501(c)(3) public-benefit
+30 Jan 23:41:28 ntpd[11712]: corporation.  Support and training for ntp-4 are
+30 Jan 23:41:28 ntpd[11712]: available at https://www.nwtime.org/support
+30 Jan 23:41:28 ntpd[11712]: ----------------------------------------------------
+30 Jan 23:41:28 ntpd[11712]: proto: precision = 0.040 usec (-24)
+30 Jan 23:41:28 ntpd[11712]: basedate set to 2022-10-21
+30 Jan 23:41:28 ntpd[11712]: gps base set to 2022-10-23 (week 2233)
+30 Jan 23:41:28 ntpd[11712]: Listen and drop on 0 v6wildcard [::]:123
+30 Jan 23:41:28 ntpd[11712]: Listen and drop on 1 v4wildcard 0.0.0.0:123
+30 Jan 23:41:28 ntpd[11712]: Listen normally on 2 lo 127.0.0.1:123
+30 Jan 23:41:28 ntpd[11712]: Listen normally on 3 enp0s3 10.0.2.15:123
+30 Jan 23:41:28 ntpd[11712]: Listen normally on 4 lo [::1]:123
+30 Jan 23:41:28 ntpd[11712]: Listen normally on 5 enp0s3 [fe80::9c1e:148a:76eb:c067%2]:123
+30 Jan 23:41:28 ntpd[11712]: Listening on routing socket on fd #22 for interface updates
+30 Jan 23:41:35 ntpd[11712]: ntpd: time slew +0.013406 s
+ntpd: time slew +0.013406s
+[pi@pi ~]$ hwclock -w
+hwclock: Cannot access the Hardware Clock via any known method.
+hwclock: Use the --verbose option to see the details of our search for an access method.
+[pi@pi ~]$ sudo hwclock -w
+[pi@pi ~]$ sudo pacman -Syyu
+:: Synchronizing package databases...
+ endeavouros                      31,1 KiB  46,0 KiB/s 00:01 [--------------------------------] 100%
+ core                            154,9 KiB   523 KiB/s 00:00 [--------------------------------] 100%
+ extra                          1745,6 KiB  2023 KiB/s 00:01 [--------------------------------] 100%
+ community                         7,2 MiB  3,93 MiB/s 00:02 [--------------------------------] 100%
+ multilib                        164,9 KiB   297 KiB/s 00:01 [--------------------------------] 100%
+:: Starting full system upgrade...
+:: Replace yad-eos with endeavouros/yad? [Y/n] y
+resolving dependencies...
+looking for conflicting packages...
+warning: dependency cycle detected:
+warning: mesa will be installed before its libglvnd dependency
+
+warning: insufficient columns available for table display
+Packages (262) a52dec-0.7.4-12  aalib-1.4rc5-15  alsa-card-profiles-1:0.3.64-1
+               amd-ucode-20230117.7e4f0ed-1  arc-gtk-theme-eos-20221218-1
+               archlinux-keyring-20221220-1  audit-3.0.9-1  b43-fwcutter-019-4  bind-9.18.10-1
+               binutils-2.40-2  btrfs-progs-6.1.2-1  ca-certificates-mozilla-3.87-1
+               chromaprint-1.5.1-6  cifs-utils-7.0-2  code-1.74.3-1  curl-7.87.0-3  db-6.2.32-1
+               db5.3-5.3.28-2  default-cursors-2-1  device-mapper-2.03.18-4
+               dialog-1:1.3_20221229-1  dosfstools-4.2-3  duktape-2.7.0-5  electron19-19.1.9-3
+               elementary-icon-theme-7.1.0-1  ell-0.56-1  endeavouros-mirrorlist-4.11-1
+               endeavouros-skel-default-1.9-1  endeavouros-skel-xfce4-3.4-1
+               endeavouros-theming-22.12.1.1-1  endeavouros-xfce4-terminal-colors-5-1
+               eos-apps-info-1.6-1  eos-bash-shared-1.41-1  eos-hooks-1.10-1
+               eos-lightdm-slick-theme-3.2-1  eos-log-tool-1.14-5  eos-packagelist-2.1-1
+               eos-quickstart-1.3.1-1  eos-translations-23-6  ethtool-1:6.1-1  exo-4.18.0-1
+               file-5.44-1  findutils-4.9.0-2  firefox-109.0-1  firewalld-1.3.0-1  flex-2.6.4-4
+               fluidsynth-2.3.1-1  fsarchiver-0.8.6-2  fuse-common-3.13.0-1  fuse3-3.13.0-1
+               fzf-0.37.0-1  garcon-4.18.0-1  gcc-12.2.1-1  gcc-libs-12.2.1-1  gd-2.3.3-6
+               gdk-pixbuf2-2.42.10-2  geoip-database-20230120-1  git-2.39.1-1  glib2-2.74.5-1
+               glibc-2.36-7  gnu-netcat-0.7.1-9  gpgme-1.18.0-2  grub-2:2.06.r440.g4de39a2af-1
+               gst-libav-1.20.5-5  gst-plugin-pipewire-1:0.3.64-1  gst-plugins-bad-1.20.5-5
+               gst-plugins-bad-libs-1.20.5-5  gst-plugins-base-1.20.5-5
+               gst-plugins-base-libs-1.20.5-5  gst-plugins-good-1.20.5-5  gst-plugins-ugly-1.20.5-5
+               gstreamer-1.20.5-5  gtk-update-icon-cache-1:4.8.3-3  gtk3-1:3.24.36-1  guile-3.0.9-1
+               gupnp-1:1.6.3-1  gvfs-1.50.3-1  gvfs-afc-1.50.3-1  gvfs-gphoto2-1.50.3-1
+               gvfs-mtp-1.50.3-1  gvfs-nfs-1.50.3-1  gvfs-smb-1.50.3-1  harfbuzz-6.0.0-1
+               harfbuzz-icu-6.0.0-1  hidapi-0.13.1-1  hwdata-0.366-1  hwdetect-2023.01-1
+               hwinfo-22.2-1  iana-etc-20221215-1  imagemagick-7.1.0.58-1  imath-3.1.6-2
+               imlib2-1.10.0-2  inxi-3.3.24.1-4  iproute2-6.1.0-3  iptables-nft-1:1.8.8-3
+               iwd-2.2-1  lcms2-2.14-2  libarchive-3.6.2-2  libcamera-0.0.3-4  libelf-0.188-2
+               libgit2-1:1.5.1-2  libglvnd-1.6.0-1  libgusb-0.4.3-1  libheif-1.14.2-1
+               libical-3.0.16-4  libiec61883-1.2.0-7  libinput-1.22.1-1  libkeybinder3-0.3.2-4
+               libksba-1.6.3-1  liblc3-1.0.1-1  libmfx-23.1.0-1  libmm-glib-1.20.4-1
+               libmodplug-0.8.9.0-5  libmpc-1.3.1-1  libnice-0.1.21-1  libnm-1.40.12-1
+               libnma-1.10.6-1  libnma-common-1.10.6-1  libomxil-bellagio-0.9.3-4
+               libopenmpt-0.6.7-1  libopenraw-0.3.3-1  libpcap-1.10.3-1  libproxy-0.4.18-2
+               libpsl-0.21.2-1  libraqm-0.10.0-1  libsigc++-2.12.0-1  libsm-1.2.4-1
+               libsndfile-1.2.0-1  libsoxr-0.1.3-3  libsysprof-capture-3.46.0-3  libtiff-4.5.0-1
+               libtool-2.4.7+4+g1ec8fa28-1  libva-2.17.0-1  libwacom-2.6.0-1  libwbclient-4.17.4-4
+               libwebp-1.3.0-2  libwireplumber-0.4.13-1  libx11-1.8.3-6  libxfce4ui-4.18.1-1
+               libxfce4util-4.18.1-1  libxkbcommon-1.5.0-1  libxkbcommon-x11-1.5.0-1
+               libxpm-3.5.15-1  linux-6.1.8.arch1-1  linux-firmware-20230117.7e4f0ed-1
+               linux-firmware-whence-20230117.7e4f0ed-1  linux-headers-6.1.8.arch1-1
+               llvm-libs-15.0.7-1  logrotate-3.21.0-2  lua-5.4.4-3  lvm2-2.03.18-4  lzo-2.10-5
+               m4-1.4.19-2  make-4.4-1  man-db-2.11.2-1  man-pages-6.02-1  mesa-22.3.3-3
+               mobile-broadband-provider-info-20221107-2  modemmanager-1.20.4-1  mpfr-4.2.0-2
+               mpg123-1.31.2-1  nano-7.2-1  ncurses-6.4-1  ndctl-75-1  neon-0.32.5-1
+               net-tools-2.10-2  netctl-1.28-2  networkmanager-1.40.12-1  nftables-1:1.0.6-1
+               nilfs-utils-2.2.9-2  nss-3.87-1  ntp-4.2.8.p15-3  openjpeg2-2.5.0-2  openssl-3.0.7-4
+               pacman-contrib-1.8.2-1  pahole-1:1.24+r29+g02d67c5-1  parallel-20230122-1
+               pciutils-3.9.0-2  pcre2-10.41-1  pcsclite-1.9.9-2  perl-5.36.0-3
+               perl-encode-locale-1.05-10  perl-html-tagset-3.20-13  perl-http-date-6.05-6
+               perl-http-negotiate-6.01-11  perl-lwp-mediatypes-6.04-3  perl-www-robotrules-6.02-11
+               pipewire-1:0.3.64-1  pipewire-alsa-1:0.3.64-1  pipewire-audio-1:0.3.64-1
+               pipewire-jack-1:0.3.64-1  pipewire-pulse-1:0.3.64-1  poppler-23.01.0-3
+               poppler-glib-23.01.0-3  pptpclient-1.10.0-3  psmisc-23.6-1  python-3.10.9-1
+               python-setproctitle-1.3.2-1  python-termcolor-2.2.0-1  qrencode-4.1.1-2
+               qt5-base-5.15.8+kde+r177-1  qt5-translations-5.15.8-1  qt6-base-6.4.2-1
+               qt6-declarative-6.4.2-1  qt6-translations-6.4.2-1  rav1e-0.6.3-1  readline-8.2.001-2
+               reiserfsprogs-3.6.27-4  ripgrep-13.0.0-3  ristretto-0.12.4-1  rsync-3.2.7-3
+               sdl2-2.26.2-1  shadow-4.13-2  shared-mime-info-2.2+13+ga2ffb28-1  slang-2.3.3-2
+               smbclient-4.17.4-4  sof-firmware-2.2.4-1  spandsp-0.0.6-4  sqlite-3.40.1-1
+               sudo-1.9.12.p2-1  svt-av1-1.4.1-1  systemd-252.4-2  systemd-libs-252.4-2
+               systemd-sysvcompat-252.4-2  texinfo-7.0.2-1  thunar-4.18.3-1  thunar-volman-4.18.0-1
+               ttf-bitstream-vera-1.10-15  tumbler-4.18.0-1  unrar-1:6.2.5-1
+               virtualbox-guest-utils-7.0.6-1  webkit2gtk-2.38.3-1  welcome-3.46-1  whois-5.5.15-1
+               wildmidi-0.4.5-1  wireplumber-0.4.13-1  wpa_supplicant-2:2.10-8  xcb-util-0.4.1-1
+               xf86-video-vmware-13.4.0-1  xfce4-appfinder-4.18.0-1  xfce4-datetime-plugin-0.8.3-1
+               xfce4-notifyd-0.7.2-1  xfce4-panel-4.18.1-1  xfce4-power-manager-4.18.0-1
+               xfce4-screenshooter-1.10.3-1  xfce4-session-4.18.0-1  xfce4-settings-4.18.1-1
+               xfce4-taskmanager-1.5.5-1  xfce4-whiskermenu-plugin-2.7.2-1  xfconf-4.18.0-1
+               xfdesktop-4.18.1-1  xfsprogs-6.1.1-2  xfwm4-4.18.0-1  xorg-server-21.1.6-1
+               xorg-server-common-21.1.6-1  xterm-378-1  xz-5.4.1-1  yad-12.3-1.1
+               yad-eos-12.1-1.1 [removal]  yay-11.3.2-1  zvbi-0.2.39-1  zxing-cpp-2.0.0-1
+
+Total Installed Size:  2883,73 MiB
+Net Upgrade Size:        73,72 MiB
+
+:: Proceed with installation? [Y/n] y
+(261/261) checking keys in keyring                           [--------------------------------] 100%
+(261/261) checking package integrity                         [--------------------------------] 100%
+error: openssl: signature from "Pierre Schmitz <pierre@archlinux.org>" is marginal trust
+:: File /var/cache/pacman/pkg/openssl-3.0.7-4-x86_64.pkg.tar.zst is corrupted (invalid or corrupted package (PGP signature)).
+Do you want to delete it? [Y/n] n
+error: failed to commit transaction (invalid or corrupted package)
+Errors occurred, no packages were upgraded.
+[pi@pi ~]$ pacman -Sy archlinux-keyring && pacman -Su
+error: you cannot perform this operation unless you are root.
+[pi@pi ~]$ sudo pacman -Sy archlinux-keyring && pacman -Su
+:: Synchronizing package databases...
+ endeavouros is up to date
+ core is up to date
+ extra is up to date
+ community is up to date
+ multilib is up to date
+resolving dependencies...
+looking for conflicting packages...
+
+Package (1)             Old Version  New Version  Net Change
+
+core/archlinux-keyring  20221123-1   20221220-1     0,02 MiB
+
+Total Installed Size:  1,60 MiB
+Net Upgrade Size:      0,02 MiB
+
+:: Proceed with installation? [Y/n] y
+(1/1) checking keys in keyring                               [--------------------------------] 100%
+(1/1) checking package integrity                             [--------------------------------] 100%
+(1/1) loading package files                                  [--------------------------------] 100%
+(1/1) checking for file conflicts                            [--------------------------------] 100%
+:: Processing package changes...
+(1/1) upgrading archlinux-keyring                            [--------------------------------] 100%
+==> Appending keys from archlinux.gpg...
+==> Disabling revoked keys in keyring...
+  -> Disabled 4 keys.
+==> Updating trust database...
+gpg: marginals needed: 3  completes needed: 1  trust model: pgp
+gpg: depth: 0  valid:   1  signed:  13  trust: 0-, 0q, 0n, 0m, 0f, 1u
+gpg: depth: 1  valid:  13  signed:  95  trust: 0-, 0q, 0n, 13m, 0f, 0u
+gpg: depth: 2  valid:  75  signed:  26  trust: 75-, 0q, 0n, 0m, 0f, 0u
+gpg: next trustdb check due at 2023-04-21
+==> Updating trust database...
+gpg: next trustdb check due at 2023-04-21
+:: Running post-transaction hooks...
+(1/3) Reloading system manager configuration...
+(2/3) Arming ConditionNeedsUpdate...
+(3/3) Checking which packages need to be rebuilt
+error: you cannot perform this operation unless you are root.
+[pi@pi ~]$ sudo pacman -Sy archlinux-keyring && pacman -Su
+:: Synchronizing package databases...
+ endeavouros is up to date
+ core is up to date
+ extra is up to date
+ community is up to date
+ multilib is up to date
+warning: archlinux-keyring-20221220-1 is up to date -- reinstalling
+resolving dependencies...
+looking for conflicting packages...
+
+Package (1)             Old Version  New Version  Net Change
+
+core/archlinux-keyring  20221220-1   20221220-1     0,00 MiB
+
+Total Installed Size:  1,60 MiB
+Net Upgrade Size:      0,00 MiB
+
+:: Proceed with installation? [Y/n] y
+(1/1) checking keys in keyring                               [--------------------------------] 100%
+(1/1) checking package integrity                             [--------------------------------] 100%
+(1/1) loading package files                                  [--------------------------------] 100%
+(1/1) checking for file conflicts                            [--------------------------------] 100%
+:: Processing package changes...
+(1/1) reinstalling archlinux-keyring                         [--------------------------------] 100%
+==> Appending keys from archlinux.gpg...
+==> Updating trust database...
+gpg: next trustdb check due at 2023-04-21
+==> Updating trust database...
+gpg: next trustdb check due at 2023-04-21
+:: Running post-transaction hooks...
+(1/3) Reloading system manager configuration...
+(2/3) Arming ConditionNeedsUpdate...
+(3/3) Checking which packages need to be rebuilt
+error: you cannot perform this operation unless you are root.
+[pi@pi ~]$ sudo pacman -Sy archlinux-keyring && sudo pacman -Su
+:: Synchronizing package databases...
+ endeavouros is up to date
+ core is up to date
+ extra is up to date
+ community is up to date
+ multilib is up to date
+warning: archlinux-keyring-20221220-1 is up to date -- reinstalling
+resolving dependencies...
+looking for conflicting packages...
+
+Package (1)             Old Version  New Version  Net Change
+
+core/archlinux-keyring  20221220-1   20221220-1     0,00 MiB
+
+Total Installed Size:  1,60 MiB
+Net Upgrade Size:      0,00 MiB
+
+:: Proceed with installation? [Y/n] y
+(1/1) checking keys in keyring                               [--------------------------------] 100%
+(1/1) checking package integrity                             [--------------------------------] 100%
+(1/1) loading package files                                  [--------------------------------] 100%
+(1/1) checking for file conflicts                            [--------------------------------] 100%
+:: Processing package changes...
+(1/1) reinstalling archlinux-keyring                         [--------------------------------] 100%
+==> Appending keys from archlinux.gpg...
+==> Updating trust database...
+gpg: next trustdb check due at 2023-04-21
+==> Updating trust database...
+gpg: next trustdb check due at 2023-04-21
+:: Running post-transaction hooks...
+(1/3) Reloading system manager configuration...
+(2/3) Arming ConditionNeedsUpdate...
+(3/3) Checking which packages need to be rebuilt
+:: Starting full system upgrade...
+:: Replace yad-eos with endeavouros/yad? [Y/n] y
+resolving dependencies...
+looking for conflicting packages...
+warning: dependency cycle detected:
+warning: mesa will be installed before its libglvnd dependency
+
+warning: insufficient columns available for table display
+Packages (261) a52dec-0.7.4-12  aalib-1.4rc5-15  alsa-card-profiles-1:0.3.64-1
+               amd-ucode-20230117.7e4f0ed-1  arc-gtk-theme-eos-20221218-1  audit-3.0.9-1
+               b43-fwcutter-019-4  bind-9.18.10-1  binutils-2.40-2  btrfs-progs-6.1.2-1
+               ca-certificates-mozilla-3.87-1  chromaprint-1.5.1-6  cifs-utils-7.0-2  code-1.74.3-1
+               curl-7.87.0-3  db-6.2.32-1  db5.3-5.3.28-2  default-cursors-2-1
+               device-mapper-2.03.18-4  dialog-1:1.3_20221229-1  dosfstools-4.2-3  duktape-2.7.0-5
+               electron19-19.1.9-3  elementary-icon-theme-7.1.0-1  ell-0.56-1
+               endeavouros-mirrorlist-4.11-1  endeavouros-skel-default-1.9-1
+               endeavouros-skel-xfce4-3.4-1  endeavouros-theming-22.12.1.1-1
+               endeavouros-xfce4-terminal-colors-5-1  eos-apps-info-1.6-1  eos-bash-shared-1.41-1
+               eos-hooks-1.10-1  eos-lightdm-slick-theme-3.2-1  eos-log-tool-1.14-5
+               eos-packagelist-2.1-1  eos-quickstart-1.3.1-1  eos-translations-23-6
+               ethtool-1:6.1-1  exo-4.18.0-1  file-5.44-1  findutils-4.9.0-2  firefox-109.0-1
+               firewalld-1.3.0-1  flex-2.6.4-4  fluidsynth-2.3.1-1  fsarchiver-0.8.6-2
+               fuse-common-3.13.0-1  fuse3-3.13.0-1  fzf-0.37.0-1  garcon-4.18.0-1  gcc-12.2.1-1
+               gcc-libs-12.2.1-1  gd-2.3.3-6  gdk-pixbuf2-2.42.10-2  geoip-database-20230120-1
+               git-2.39.1-1  glib2-2.74.5-1  glibc-2.36-7  gnu-netcat-0.7.1-9  gpgme-1.18.0-2
+               grub-2:2.06.r440.g4de39a2af-1  gst-libav-1.20.5-5  gst-plugin-pipewire-1:0.3.64-1
+               gst-plugins-bad-1.20.5-5  gst-plugins-bad-libs-1.20.5-5  gst-plugins-base-1.20.5-5
+               gst-plugins-base-libs-1.20.5-5  gst-plugins-good-1.20.5-5  gst-plugins-ugly-1.20.5-5
+               gstreamer-1.20.5-5  gtk-update-icon-cache-1:4.8.3-3  gtk3-1:3.24.36-1  guile-3.0.9-1
+               gupnp-1:1.6.3-1  gvfs-1.50.3-1  gvfs-afc-1.50.3-1  gvfs-gphoto2-1.50.3-1
+               gvfs-mtp-1.50.3-1  gvfs-nfs-1.50.3-1  gvfs-smb-1.50.3-1  harfbuzz-6.0.0-1
+               harfbuzz-icu-6.0.0-1  hidapi-0.13.1-1  hwdata-0.366-1  hwdetect-2023.01-1
+               hwinfo-22.2-1  iana-etc-20221215-1  imagemagick-7.1.0.58-1  imath-3.1.6-2
+               imlib2-1.10.0-2  inxi-3.3.24.1-4  iproute2-6.1.0-3  iptables-nft-1:1.8.8-3
+               iwd-2.2-1  lcms2-2.14-2  libarchive-3.6.2-2  libcamera-0.0.3-4  libelf-0.188-2
+               libgit2-1:1.5.1-2  libglvnd-1.6.0-1  libgusb-0.4.3-1  libheif-1.14.2-1
+               libical-3.0.16-4  libiec61883-1.2.0-7  libinput-1.22.1-1  libkeybinder3-0.3.2-4
+               libksba-1.6.3-1  liblc3-1.0.1-1  libmfx-23.1.0-1  libmm-glib-1.20.4-1
+               libmodplug-0.8.9.0-5  libmpc-1.3.1-1  libnice-0.1.21-1  libnm-1.40.12-1
+               libnma-1.10.6-1  libnma-common-1.10.6-1  libomxil-bellagio-0.9.3-4
+               libopenmpt-0.6.7-1  libopenraw-0.3.3-1  libpcap-1.10.3-1  libproxy-0.4.18-2
+               libpsl-0.21.2-1  libraqm-0.10.0-1  libsigc++-2.12.0-1  libsm-1.2.4-1
+               libsndfile-1.2.0-1  libsoxr-0.1.3-3  libsysprof-capture-3.46.0-3  libtiff-4.5.0-1
+               libtool-2.4.7+4+g1ec8fa28-1  libva-2.17.0-1  libwacom-2.6.0-1  libwbclient-4.17.4-4
+               libwebp-1.3.0-2  libwireplumber-0.4.13-1  libx11-1.8.3-6  libxfce4ui-4.18.1-1
+               libxfce4util-4.18.1-1  libxkbcommon-1.5.0-1  libxkbcommon-x11-1.5.0-1
+               libxpm-3.5.15-1  linux-6.1.8.arch1-1  linux-firmware-20230117.7e4f0ed-1
+               linux-firmware-whence-20230117.7e4f0ed-1  linux-headers-6.1.8.arch1-1
+               llvm-libs-15.0.7-1  logrotate-3.21.0-2  lua-5.4.4-3  lvm2-2.03.18-4  lzo-2.10-5
+               m4-1.4.19-2  make-4.4-1  man-db-2.11.2-1  man-pages-6.02-1  mesa-22.3.3-3
+               mobile-broadband-provider-info-20221107-2  modemmanager-1.20.4-1  mpfr-4.2.0-2
+               mpg123-1.31.2-1  nano-7.2-1  ncurses-6.4-1  ndctl-75-1  neon-0.32.5-1
+               net-tools-2.10-2  netctl-1.28-2  networkmanager-1.40.12-1  nftables-1:1.0.6-1
+               nilfs-utils-2.2.9-2  nss-3.87-1  ntp-4.2.8.p15-3  openjpeg2-2.5.0-2  openssl-3.0.7-4
+               pacman-contrib-1.8.2-1  pahole-1:1.24+r29+g02d67c5-1  parallel-20230122-1
+               pciutils-3.9.0-2  pcre2-10.41-1  pcsclite-1.9.9-2  perl-5.36.0-3
+               perl-encode-locale-1.05-10  perl-html-tagset-3.20-13  perl-http-date-6.05-6
+               perl-http-negotiate-6.01-11  perl-lwp-mediatypes-6.04-3  perl-www-robotrules-6.02-11
+               pipewire-1:0.3.64-1  pipewire-alsa-1:0.3.64-1  pipewire-audio-1:0.3.64-1
+               pipewire-jack-1:0.3.64-1  pipewire-pulse-1:0.3.64-1  poppler-23.01.0-3
+               poppler-glib-23.01.0-3  pptpclient-1.10.0-3  psmisc-23.6-1  python-3.10.9-1
+               python-setproctitle-1.3.2-1  python-termcolor-2.2.0-1  qrencode-4.1.1-2
+               qt5-base-5.15.8+kde+r177-1  qt5-translations-5.15.8-1  qt6-base-6.4.2-1
+               qt6-declarative-6.4.2-1  qt6-translations-6.4.2-1  rav1e-0.6.3-1  readline-8.2.001-2
+               reiserfsprogs-3.6.27-4  ripgrep-13.0.0-3  ristretto-0.12.4-1  rsync-3.2.7-3
+               sdl2-2.26.2-1  shadow-4.13-2  shared-mime-info-2.2+13+ga2ffb28-1  slang-2.3.3-2
+               smbclient-4.17.4-4  sof-firmware-2.2.4-1  spandsp-0.0.6-4  sqlite-3.40.1-1
+               sudo-1.9.12.p2-1  svt-av1-1.4.1-1  systemd-252.4-2  systemd-libs-252.4-2
+               systemd-sysvcompat-252.4-2  texinfo-7.0.2-1  thunar-4.18.3-1  thunar-volman-4.18.0-1
+               ttf-bitstream-vera-1.10-15  tumbler-4.18.0-1  unrar-1:6.2.5-1
+               virtualbox-guest-utils-7.0.6-1  webkit2gtk-2.38.3-1  welcome-3.46-1  whois-5.5.15-1
+               wildmidi-0.4.5-1  wireplumber-0.4.13-1  wpa_supplicant-2:2.10-8  xcb-util-0.4.1-1
+               xf86-video-vmware-13.4.0-1  xfce4-appfinder-4.18.0-1  xfce4-datetime-plugin-0.8.3-1
+               xfce4-notifyd-0.7.2-1  xfce4-panel-4.18.1-1  xfce4-power-manager-4.18.0-1
+               xfce4-screenshooter-1.10.3-1  xfce4-session-4.18.0-1  xfce4-settings-4.18.1-1
+               xfce4-taskmanager-1.5.5-1  xfce4-whiskermenu-plugin-2.7.2-1  xfconf-4.18.0-1
+               xfdesktop-4.18.1-1  xfsprogs-6.1.1-2  xfwm4-4.18.0-1  xorg-server-21.1.6-1
+               xorg-server-common-21.1.6-1  xterm-378-1  xz-5.4.1-1  yad-12.3-1.1
+               yad-eos-12.1-1.1 [removal]  yay-11.3.2-1  zvbi-0.2.39-1  zxing-cpp-2.0.0-1
+
+Total Installed Size:  2882,13 MiB
+Net Upgrade Size:        73,70 MiB
+
+:: Proceed with installation? [Y/n] y
+(260/260) checking keys in keyring                           [--------------------------------] 100%
+(260/260) checking package integrity                         [--------------------------------] 100%
+(260/260) loading package files                              [--------------------------------] 100%
+(260/260) checking for file conflicts                        [--------------------------------] 100%
+:: Running pre-transaction hooks...
+(1/1) Removing linux initcpios...
+:: Processing package changes...
+(1/1) removing yad-eos                                       [--------------------------------] 100%
+(  1/260) upgrading iana-etc                                 [--------------------------------] 100%
+(  2/260) upgrading glibc                                    [--------------------------------] 100%
+Generating locales...
+  el_GR.UTF-8... done
+  en_US.UTF-8... done
+Generation complete.
+(  3/260) upgrading a52dec                                   [--------------------------------] 100%
+(  4/260) upgrading libx11                                   [--------------------------------] 100%
+(  5/260) upgrading gcc-libs                                 [--------------------------------] 100%
+(  6/260) upgrading ncurses                                  [--------------------------------] 100%
+(  7/260) upgrading readline                                 [--------------------------------] 100%
+(  8/260) upgrading xz                                       [--------------------------------] 100%
+(  9/260) upgrading openssl                                  [--------------------------------] 100%
+( 10/260) upgrading audit                                    [--------------------------------] 100%
+( 11/260) upgrading systemd-libs                             [--------------------------------] 100%
+( 12/260) upgrading aalib                                    [--------------------------------] 100%
+( 13/260) upgrading alsa-card-profiles                       [--------------------------------] 100%
+( 14/260) upgrading amd-ucode                                [--------------------------------] 100%
+( 15/260) upgrading arc-gtk-theme-eos                        [--------------------------------] 100%
+( 16/260) upgrading b43-fwcutter                             [--------------------------------] 100%
+( 17/260) upgrading python                                   [--------------------------------] 100%
+( 18/260) upgrading bind                                     [--------------------------------] 100%
+( 19/260) upgrading libpsl                                   [--------------------------------] 100%
+( 20/260) upgrading findutils                                [--------------------------------] 100%
+( 21/260) upgrading ca-certificates-mozilla                  [--------------------------------] 100%
+( 22/260) upgrading curl                                     [--------------------------------] 100%
+( 23/260) upgrading libelf                                   [--------------------------------] 100%
+( 24/260) upgrading binutils                                 [--------------------------------] 100%
+( 25/260) upgrading lzo                                      [--------------------------------] 100%
+( 26/260) upgrading btrfs-progs                              [--------------------------------] 100%
+( 27/260) upgrading libomxil-bellagio                        [--------------------------------] 100%
+( 28/260) upgrading llvm-libs                                [--------------------------------] 100%
+( 29/260) upgrading default-cursors                          [--------------------------------] 100%
+New optional dependencies for default-cursors
+    adwaita-cursors: default cursor theme [installed]
+( 30/260) upgrading mesa                                     [--------------------------------] 100%
+( 31/260) upgrading libglvnd                                 [--------------------------------] 100%
+( 32/260) upgrading libtiff                                  [--------------------------------] 100%
+( 33/260) upgrading libwebp                                  [--------------------------------] 100%
+( 34/260) upgrading lcms2                                    [--------------------------------] 100%
+( 35/260) upgrading openjpeg2                                [--------------------------------] 100%
+( 36/260) upgrading hidapi                                   [--------------------------------] 100%
+( 37/260) upgrading sdl2                                     [--------------------------------] 100%
+( 38/260) upgrading libsysprof-capture                       [--------------------------------] 100%
+( 39/260) upgrading pcre2                                    [--------------------------------] 100%
+( 40/260) upgrading glib2                                    [--------------------------------] 100%
+( 41/260) upgrading libcamera                                [--------------------------------] 100%
+( 42/260) upgrading pipewire                                 [--------------------------------] 100%
+( 43/260) installing liblc3                                  [--------------------------------] 100%
+( 44/260) upgrading libtool                                  [--------------------------------] 100%
+( 45/260) upgrading mpg123                                   [--------------------------------] 100%
+( 46/260) upgrading libsndfile                               [--------------------------------] 100%
+( 47/260) upgrading pipewire-audio                           [--------------------------------] 100%
+( 48/260) upgrading libwireplumber                           [--------------------------------] 100%
+( 49/260) upgrading lua                                      [--------------------------------] 100%
+( 50/260) upgrading wireplumber                              [--------------------------------] 100%
+( 51/260) upgrading pipewire-jack                            [--------------------------------] 100%
+( 52/260) upgrading libmodplug                               [--------------------------------] 100%
+( 53/260) upgrading libiec61883                              [--------------------------------] 100%
+( 54/260) upgrading libmfx                                   [--------------------------------] 100%
+( 55/260) upgrading libsoxr                                  [--------------------------------] 100%
+( 56/260) upgrading libva                                    [--------------------------------] 100%
+( 57/260) upgrading libgit2                                  [--------------------------------] 100%
+( 58/260) upgrading rav1e                                    [--------------------------------] 100%
+( 59/260) upgrading svt-av1                                  [--------------------------------] 100%
+( 60/260) upgrading harfbuzz                                 [--------------------------------] 100%
+( 61/260) upgrading shared-mime-info                         [--------------------------------] 100%
+( 62/260) upgrading gdk-pixbuf2                              [--------------------------------] 100%
+( 63/260) upgrading hwdata                                   [--------------------------------] 100%
+( 64/260) upgrading libpcap                                  [--------------------------------] 100%
+( 65/260) upgrading nftables                                 [--------------------------------] 100%
+( 66/260) upgrading iptables-nft                             [--------------------------------] 100%
+( 67/260) upgrading device-mapper                            [--------------------------------] 100%
+( 68/260) upgrading file                                     [--------------------------------] 100%
+( 69/260) upgrading shadow                                   [--------------------------------] 100%
+( 70/260) upgrading systemd                                  [--------------------------------] 100%
+( 71/260) upgrading libsm                                    [--------------------------------] 100%
+( 72/260) upgrading chromaprint                              [--------------------------------] 100%
+( 73/260) installing libwbclient                             [--------------------------------] 100%
+Optional dependencies for libwbclient
+    python-dnspython: samba_dnsupdate and samba_upgradedns in AD setup
+    python-markdown: for samba-tool domain schemeupgrade
+    glusterfs: for vfs_glusterfs support
+( 74/260) upgrading cifs-utils                               [--------------------------------] 100%
+New optional dependencies for cifs-utils
+    python: for smb2-quota and smbinfo script [installed]
+( 75/260) upgrading libxkbcommon                             [--------------------------------] 100%
+( 76/260) upgrading gtk-update-icon-cache                    [--------------------------------] 100%
+( 77/260) upgrading sqlite                                   [--------------------------------] 100%
+( 78/260) upgrading duktape                                  [--------------------------------] 100%
+( 79/260) upgrading libproxy                                 [--------------------------------] 100%
+New optional dependencies for libproxy
+    pacrunner: PAC proxy support (via pacrunner)
+( 80/260) upgrading gtk3                                     [--------------------------------] 100%
+( 81/260) upgrading nss                                      [--------------------------------] 100%
+( 82/260) upgrading electron19                               [--------------------------------] 100%
+( 83/260) upgrading ripgrep                                  [--------------------------------] 100%
+( 84/260) upgrading code                                     [--------------------------------] 100%
+( 85/260) upgrading db                                       [--------------------------------] 100%
+( 86/260) upgrading dialog                                   [--------------------------------] 100%
+( 87/260) upgrading dosfstools                               [--------------------------------] 100%
+( 88/260) upgrading ell                                      [--------------------------------] 100%
+( 89/260) upgrading endeavouros-mirrorlist                   [--------------------------------] 100%
+warning: /etc/pacman.d/endeavouros-mirrorlist installed as /etc/pacman.d/endeavouros-mirrorlist.pacnew
+( 90/260) upgrading endeavouros-skel-default                 [--------------------------------] 100%
+( 91/260) upgrading endeavouros-theming                      [--------------------------------] 100%
+( 92/260) upgrading endeavouros-skel-xfce4                   [--------------------------------] 100%
+( 93/260) upgrading libxfce4util                             [--------------------------------] 100%
+( 94/260) upgrading xfconf                                   [--------------------------------] 100%
+( 95/260) upgrading xcb-util                                 [--------------------------------] 100%
+( 96/260) upgrading libxfce4ui                               [--------------------------------] 100%
+( 97/260) upgrading endeavouros-xfce4-terminal-colors        [--------------------------------] 100%
+( 98/260) upgrading eos-translations                         [--------------------------------] 100%
+( 99/260) upgrading gstreamer                                [--------------------------------] 100%
+(100/260) upgrading gst-plugins-base-libs                    [--------------------------------] 100%
+(101/260) upgrading harfbuzz-icu                             [--------------------------------] 100%
+(102/260) installing db5.3                                   [--------------------------------] 100%
+(103/260) upgrading perl                                     [--------------------------------] 100%
+(104/260) upgrading webkit2gtk                               [--------------------------------] 100%
+(105/260) installing yad                                     [--------------------------------] 100%
+(106/260) upgrading eos-bash-shared                          [--------------------------------] 100%
+(107/260) upgrading eos-apps-info                            [--------------------------------] 100%
+(108/260) upgrading eos-hooks                                [--------------------------------] 100%
+(109/260) upgrading xorg-server-common                       [--------------------------------] 100%
+(110/260) upgrading libwacom                                 [--------------------------------] 100%
+(111/260) upgrading libinput                                 [--------------------------------] 100%
+(112/260) upgrading xorg-server                              [--------------------------------] 100%
+(113/260) upgrading eos-lightdm-slick-theme                  [--------------------------------] 100%
+(114/260) upgrading net-tools                                [--------------------------------] 100%
+(115/260) upgrading pciutils                                 [--------------------------------] 100%
+New optional dependencies for pciutils
+    curl: for update-pciids [installed]
+    grep: for update-pciids [installed]
+    which: for update-pciids [installed]
+(116/260) upgrading eos-log-tool                             [--------------------------------] 100%
+New optional dependencies for eos-log-tool
+    expac: for showing native packages (much faster)
+(117/260) upgrading eos-packagelist                          [--------------------------------] 100%
+(118/260) upgrading libxkbcommon-x11                         [--------------------------------] 100%
+(119/260) upgrading qt6-translations                         [--------------------------------] 100%
+(120/260) upgrading qt6-base                                 [--------------------------------] 100%
+(121/260) upgrading qt6-declarative                          [--------------------------------] 100%
+(122/260) upgrading eos-quickstart                           [--------------------------------] 100%
+(123/260) upgrading ethtool                                  [--------------------------------] 100%
+(124/260) upgrading exo                                      [--------------------------------] 100%
+(125/260) upgrading ttf-bitstream-vera                       [--------------------------------] 100%
+(126/260) upgrading firefox                                  [--------------------------------] 100%
+(127/260) upgrading firewalld                                [--------------------------------] 100%
+(128/260) upgrading m4                                       [--------------------------------] 100%
+(129/260) upgrading flex                                     [--------------------------------] 100%
+(130/260) upgrading fluidsynth                               [--------------------------------] 100%
+(131/260) upgrading fsarchiver                               [--------------------------------] 100%
+(132/260) upgrading fuse-common                              [--------------------------------] 100%
+(133/260) upgrading fuse3                                    [--------------------------------] 100%
+(134/260) upgrading fzf                                      [--------------------------------] 100%
+(135/260) upgrading garcon                                   [--------------------------------] 100%
+(136/260) upgrading mpfr                                     [--------------------------------] 100%
+(137/260) upgrading libmpc                                   [--------------------------------] 100%
+(138/260) upgrading gcc                                      [--------------------------------] 100%
+(139/260) upgrading libxpm                                   [--------------------------------] 100%
+(140/260) upgrading libheif                                  [--------------------------------] 100%
+(141/260) upgrading gd                                       [--------------------------------] 100%
+(142/260) upgrading geoip-database                           [--------------------------------] 100%
+(143/260) upgrading git                                      [--------------------------------] 100%
+(144/260) upgrading texinfo                                  [--------------------------------] 100%
+(145/260) upgrading gnu-netcat                               [--------------------------------] 100%
+(146/260) upgrading libksba                                  [--------------------------------] 100%
+(147/260) upgrading gpgme                                    [--------------------------------] 100%
+(148/260) upgrading grub                                     [--------------------------------] 100%
+:: To use the new features provided in this GRUB update, it is recommended
+   to install it to the MBR or UEFI. Due to potential configuration
+   incompatibilities, it is advised to run both, installation and generation
+   of configuration:
+     $ grub-install ...
+     $ grub-mkconfig -o /boot/grub/grub.cfg
+(149/260) upgrading gst-libav                                [--------------------------------] 100%
+(150/260) upgrading gst-plugin-pipewire                      [--------------------------------] 100%
+(151/260) upgrading gst-plugins-bad-libs                     [--------------------------------] 100%
+(152/260) upgrading neon                                     [--------------------------------] 100%
+(153/260) upgrading spandsp                                  [--------------------------------] 100%
+(154/260) upgrading zvbi                                     [--------------------------------] 100%
+(155/260) upgrading gupnp                                    [--------------------------------] 100%
+(156/260) upgrading libnice                                  [--------------------------------] 100%
+(157/260) upgrading wildmidi                                 [--------------------------------] 100%
+(158/260) upgrading libopenmpt                               [--------------------------------] 100%
+(159/260) upgrading qrencode                                 [--------------------------------] 100%
+(160/260) upgrading zxing-cpp                                [--------------------------------] 100%
+(161/260) upgrading imath                                    [--------------------------------] 100%
+(162/260) upgrading libraqm                                  [--------------------------------] 100%
+(163/260) upgrading imagemagick                              [--------------------------------] 100%
+(164/260) upgrading gst-plugins-bad                          [--------------------------------] 100%
+(165/260) upgrading gst-plugins-base                         [--------------------------------] 100%
+(166/260) upgrading imlib2                                   [--------------------------------] 100%
+(167/260) upgrading gst-plugins-good                         [--------------------------------] 100%
+(168/260) upgrading gst-plugins-ugly                         [--------------------------------] 100%
+(169/260) upgrading guile                                    [--------------------------------] 100%
+(170/260) upgrading libarchive                               [--------------------------------] 100%
+(171/260) upgrading psmisc                                   [--------------------------------] 100%
+(172/260) upgrading lvm2                                     [--------------------------------] 100%
+(173/260) upgrading ndctl                                    [--------------------------------] 100%
+(174/260) upgrading xfsprogs                                 [--------------------------------] 100%
+New optional dependencies for xfsprogs
+    icu: for xfs_scrub [installed]
+(175/260) upgrading gvfs                                     [--------------------------------] 100%
+(176/260) upgrading gvfs-afc                                 [--------------------------------] 100%
+(177/260) upgrading gvfs-gphoto2                             [--------------------------------] 100%
+(178/260) upgrading gvfs-mtp                                 [--------------------------------] 100%
+(179/260) upgrading gvfs-nfs                                 [--------------------------------] 100%
+(180/260) upgrading smbclient                                [--------------------------------] 100%
+(181/260) upgrading gvfs-smb                                 [--------------------------------] 100%
+(182/260) upgrading hwdetect                                 [--------------------------------] 100%
+(183/260) upgrading perl-encode-locale                       [--------------------------------] 100%
+(184/260) upgrading perl-http-date                           [--------------------------------] 100%
+(185/260) upgrading perl-lwp-mediatypes                      [--------------------------------] 100%
+(186/260) upgrading perl-http-negotiate                      [--------------------------------] 100%
+(187/260) upgrading perl-www-robotrules                      [--------------------------------] 100%
+(188/260) upgrading perl-html-tagset                         [--------------------------------] 100%
+(189/260) upgrading hwinfo                                   [--------------------------------] 100%
+(190/260) upgrading inxi                                     [--------------------------------] 100%
+New optional dependencies for inxi
+    bind: dig: -i wlan IP [installed]
+    binutils: strings: -I sysvinit version [installed]
+    curl: -i (if no dig); -w,-W; -U [installed]
+    dmidecode: -M if no sys machine data; -m [installed]
+    doas: -Dx hddtemp-user; -o file-user (alt for sudo)
+    file: -o unmounted file system (if no lsblk) [installed]
+    freeipmi: ipmi-sensors: -s IPMI sensors (servers)
+    hddtemp: -Dx show hdd temp, if no drivetemp module
+    ipmitool: -s IPMI sensors (servers)
+    iproute2: ip: -i ip LAN [installed]
+    kmod: modinfo: Ax; -Nx module version [installed]
+    lm_sensors: sensors: -s sensors output [installed]
+    lvm2: lvs: -L LVM data [installed]
+    mdadm: -Ra advanced mdraid data [installed]
+    mesa-utils: glxinfo: -G (X) glx info [installed]
+    net-tools: ifconfig: -i ip LAN (deprecated) [installed]
+    perl-cpanel-json-xs: Cpanel::JSON::XS: --output json (faster than JSON::PP)
+    perl-io-socket-ssl: IO::Socket::SSL: -U; -w,-W; -i (if dig not installed)
+    perl-json-xs: JSON::XS: --output json (legacy)
+    smartmontools: smartctl: -Da advanced data [installed]
+    sudo: -Dx hddtemp-user; -o file-user [installed]
+    systemd-sysvcompat: -I runlevel [installed]
+    usbutils: lsusb: -A usb audio; -J (optional); -N usb networking [installed]
+    wget: -i (if no dig); -w,-W; -U [installed]
+    wmctrl: -S active window manager (fallback)
+    xorg-xdpyinfo: xdpyinfo: -G (X) Screen resolution, dpi; -Ga Screen size [installed]
+    xorg-xdriinfo: xdriinfo: -G (X) DRI driver (if missing, fallback to Xorg log)
+    xorg-xprop: xprop: -S (X) desktop data [installed]
+    xorg-xrandr: xrandr: -G (X) monitors(s) resolution; -Ga monitor data [installed]
+(191/260) upgrading iproute2                                 [--------------------------------] 100%
+New optional dependencies for iproute2
+    db5.3: userspace arp daemon [installed]
+(192/260) upgrading iwd                                      [--------------------------------] 100%
+(193/260) upgrading libgusb                                  [--------------------------------] 100%
+(194/260) upgrading libical                                  [--------------------------------] 100%
+(195/260) upgrading libkeybinder3                            [--------------------------------] 100%
+(196/260) upgrading libmm-glib                               [--------------------------------] 100%
+(197/260) upgrading libnm                                    [--------------------------------] 100%
+(198/260) upgrading mobile-broadband-provider-info           [--------------------------------] 100%
+(199/260) upgrading libnma-common                            [--------------------------------] 100%
+(200/260) upgrading libnma                                   [--------------------------------] 100%
+(201/260) upgrading libopenraw                               [--------------------------------] 100%
+(202/260) upgrading libsigc++                                [--------------------------------] 100%
+(203/260) upgrading linux                                    [--------------------------------] 100%
+(204/260) upgrading linux-firmware-whence                    [--------------------------------] 100%
+(205/260) upgrading linux-firmware                           [--------------------------------] 100%
+(206/260) upgrading pahole                                   [--------------------------------] 100%
+(207/260) upgrading linux-headers                            [--------------------------------] 100%
+(208/260) upgrading logrotate                                [--------------------------------] 100%
+(209/260) upgrading make                                     [--------------------------------] 100%
+(210/260) upgrading man-db                                   [--------------------------------] 100%
+(211/260) upgrading man-pages                                [--------------------------------] 100%
+(212/260) upgrading modemmanager                             [--------------------------------] 100%
+(213/260) upgrading nano                                     [--------------------------------] 100%
+(214/260) upgrading netctl                                   [--------------------------------] 100%
+(215/260) upgrading pcsclite                                 [--------------------------------] 100%
+New optional dependencies for pcsclite
+    ccid: USB Chip/Smart Card Interface Devices driver
+    python: API call trace logging with the pcsc-spy [installed]
+(216/260) upgrading wpa_supplicant                           [--------------------------------] 100%
+(217/260) upgrading slang                                    [--------------------------------] 100%
+(218/260) upgrading networkmanager                           [--------------------------------] 100%
+New optional dependencies for networkmanager
+    pacrunner: PAC proxy support
+(219/260) upgrading nilfs-utils                              [--------------------------------] 100%
+(220/260) upgrading ntp                                      [--------------------------------] 100%
+(221/260) upgrading pacman-contrib                           [--------------------------------] 100%
+(222/260) upgrading parallel                                 [--------------------------------] 100%
+(223/260) upgrading pipewire-alsa                            [--------------------------------] 100%
+(224/260) upgrading pipewire-pulse                           [--------------------------------] 100%
+(225/260) upgrading poppler                                  [--------------------------------] 100%
+(226/260) upgrading poppler-glib                             [--------------------------------] 100%
+(227/260) upgrading pptpclient                               [--------------------------------] 100%
+(228/260) upgrading python-setproctitle                      [--------------------------------] 100%
+(229/260) upgrading python-termcolor                         [--------------------------------] 100%
+(230/260) upgrading qt5-translations                         [--------------------------------] 100%
+(231/260) upgrading qt5-base                                 [--------------------------------] 100%
+(232/260) upgrading reiserfsprogs                            [--------------------------------] 100%
+(233/260) upgrading tumbler                                  [--------------------------------] 100%
+(234/260) upgrading ristretto                                [--------------------------------] 100%
+(235/260) upgrading rsync                                    [--------------------------------] 100%
+New optional dependencies for rsync
+    python: for rrsync [installed]
+(236/260) upgrading sof-firmware                             [--------------------------------] 100%
+(237/260) upgrading sudo                                     [--------------------------------] 100%
+(238/260) upgrading systemd-sysvcompat                       [--------------------------------] 100%
+(239/260) upgrading thunar                                   [--------------------------------] 100%
+(240/260) upgrading thunar-volman                            [--------------------------------] 100%
+(241/260) upgrading unrar                                    [--------------------------------] 100%
+(242/260) upgrading xf86-video-vmware                        [--------------------------------] 100%
+(243/260) upgrading virtualbox-guest-utils                   [--------------------------------] 100%
+(244/260) upgrading welcome                                  [--------------------------------] 100%
+(245/260) upgrading whois                                    [--------------------------------] 100%
+(246/260) upgrading xfce4-appfinder                          [--------------------------------] 100%
+(247/260) upgrading xfce4-panel                              [--------------------------------] 100%
+(248/260) upgrading xfce4-datetime-plugin                    [--------------------------------] 100%
+=> The datetime plugin is unmaintained. Consider switching
+   to the panel's clock plugin which has similar features.
+(249/260) upgrading xfce4-notifyd                            [--------------------------------] 100%
+(250/260) upgrading xfce4-power-manager                      [--------------------------------] 100%
+(251/260) upgrading xfce4-screenshooter                      [--------------------------------] 100%
+(252/260) upgrading xfce4-session                            [--------------------------------] 100%
+New optional dependencies for xfce4-session
+    light-locker: for locking screen with xflock4
+(253/260) installing elementary-icon-theme                   [--------------------------------] 100%
+(254/260) upgrading xfce4-settings                           [--------------------------------] 100%
+(255/260) upgrading xfce4-taskmanager                        [--------------------------------] 100%
+(256/260) upgrading xfce4-whiskermenu-plugin                 [--------------------------------] 100%
+(257/260) upgrading xfdesktop                                [--------------------------------] 100%
+(258/260) upgrading xfwm4                                    [--------------------------------] 100%
+(259/260) upgrading xterm                                    [--------------------------------] 100%
+(260/260) upgrading yay                                      [--------------------------------] 100%
+:: Running post-transaction hooks...
+( 1/28) Creating system user accounts...
+( 2/28) Updating journal message catalog...
+( 3/28) Reloading system manager configuration...
+( 4/28) Updating udev hardware database...
+( 5/28) Applying kernel sysctl settings...
+( 6/28) Creating temporary files...
+( 7/28) Reloading device manager configuration...
+( 8/28) Arming ConditionNeedsUpdate...
+( 9/28) Updating the MIME type database...
+(10/28) Rebuilding certificate stores...
+(11/28) Updating module dependencies...
+(12/28) Updating linux initcpios...
+==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+  -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux.img
+==> Starting build: 6.1.8-arch1-1
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [modconf]
+  -> Running build hook: [block]
+  -> Running build hook: [keyboard]
+  -> Running build hook: [keymap]
+  -> Running build hook: [consolefont]
+==> WARNING: consolefont: no font found in configuration
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: /boot/initramfs-linux.img
+==> Image generation successful
+==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'fallback'
+  -> -k /boot/vmlinuz-linux -c /etc/mkinitcpio.conf -g /boot/initramfs-linux-fallback.img -S autodetect
+==> Starting build: 6.1.8-arch1-1
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [modconf]
+  -> Running build hook: [block]
+==> WARNING: Possibly missing firmware for module: qed
+==> WARNING: Possibly missing firmware for module: qla1280
+==> WARNING: Possibly missing firmware for module: qla2xxx
+==> WARNING: Possibly missing firmware for module: wd719x
+==> WARNING: Possibly missing firmware for module: bfa
+==> WARNING: Possibly missing firmware for module: aic94xx
+==> WARNING: Possibly missing firmware for module: xhci_pci
+  -> Running build hook: [keyboard]
+  -> Running build hook: [keymap]
+  -> Running build hook: [consolefont]
+==> WARNING: consolefont: no font found in configuration
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: /boot/initramfs-linux-fallback.img
+==> Image generation successful
+(13/28) Reloading system bus configuration...
+(14/28) Warn about old perl modules
+(15/28) Update EndeavourOS specific hooks.
+(16/28) Hook to rank EndeavourOS mirrors after installing or upgrading the related mirrorlist package
+==> Info: extracting /var/cache/pacman/pkg/endeavouros-mirrorlist-4.11-1-any.pkg.tar.zst ...
+==> Info: ranking EndeavourOS mirrors, please wait ...
+
+==> Results of ranking EndeavourOS mirrors:
+
+
+==> Writing new ranked EndeavourOS mirrorlist to /etc/pacman.d/endeavouros-mirrorlist.pacnew.
+==> New mirrorlist saved.
+
+(17/28) Check if user should be informed about rebooting after certain system package upgrades.
+==> INFO: Reboot is recommended due to the upgrade of core system package(s).
+(18/28) Move the EndeavourOS repo before Arch repos in /etc/pacman.conf (only once)
+==> Info: eos-repo-before-arch-repos has been executed before.
+(19/28) Updating fontconfig cache...
+(20/28) Probing GDK-Pixbuf loader modules...
+(21/28) Updating GIO module cache...
+(22/28) Compiling GSettings XML schema files...
+(23/28) Probing GTK3 input method modules...
+(24/28) Updating icon theme caches...
+(25/28) Reloading GVFS config...
+(26/28) Checking which packages need to be rebuilt
+(27/28) Updating the info directory file...
+(28/28) Updating the desktop file MIME type cache...
+[pi@pi ~]$  sudo pacman -S gcc kmod
+warning: gcc-12.2.1-1 is up to date -- reinstalling
+warning: kmod-30-3 is up to date -- reinstalling
+resolving dependencies...
+looking for conflicting packages...
+
+Package (2)  Old Version  New Version  Net Change  Download Size
+
+core/gcc     12.2.1-1     12.2.1-1       0,00 MiB               
+core/kmod    30-3         30-3           0,00 MiB       0,12 MiB
+
+Total Download Size:     0,12 MiB
+Total Installed Size:  170,63 MiB
+Net Upgrade Size:        0,00 MiB
+
+:: Proceed with installation? [Y/n] y
+:: Retrieving packages...
+ kmod-30-3-x86_64                119,9 KiB   693 KiB/s 00:00 [--------------------------------] 100%
+(2/2) checking keys in keyring                               [--------------------------------] 100%
+(2/2) checking package integrity                             [--------------------------------] 100%
+(2/2) loading package files                                  [--------------------------------] 100%
+(2/2) checking for file conflicts                            [--------------------------------] 100%
+:: Processing package changes...
+(1/2) reinstalling gcc                                       [--------------------------------] 100%
+(2/2) reinstalling kmod                                      [--------------------------------] 100%
+:: Running post-transaction hooks...
+(1/3) Arming ConditionNeedsUpdate...
+(2/3) Checking which packages need to be rebuilt
+(3/3) Updating the info directory file...
+[pi@pi ~]$  sudo pacman -S linux-headers
+warning: linux-headers-6.1.8.arch1-1 is up to date -- reinstalling
+resolving dependencies...
+looking for conflicting packages...
+
+Package (1)         Old Version    New Version    Net Change
+
+core/linux-headers  6.1.8.arch1-1  6.1.8.arch1-1    0,00 MiB
+
+Total Installed Size:  145,73 MiB
+Net Upgrade Size:        0,00 MiB
+
+:: Proceed with installation? [Y/n] y
+(1/1) checking keys in keyring                               [--------------------------------] 100%
+(1/1) checking package integrity                             [--------------------------------] 100%
+(1/1) loading package files                                  [--------------------------------] 100%
+(1/1) checking for file conflicts                            [--------------------------------] 100%
+:: Processing package changes...
+(1/1) reinstalling linux-headers                             [--------------------------------] 100%
+:: Running post-transaction hooks...
+(1/3) Arming ConditionNeedsUpdate...
+(2/3) Updating module dependencies...
+(3/3) Checking which packages need to be rebuilt
+[pi@pi ~]$ 
