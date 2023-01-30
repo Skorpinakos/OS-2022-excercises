@@ -1,4 +1,4 @@
-obj-m += hello.o # Change this for different module names.
+obj-m += list-children.o # Change this for different module names.
  
 PWD := $(CURDIR) 
  
